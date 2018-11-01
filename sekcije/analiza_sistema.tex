@@ -14,12 +14,50 @@ Cilj ovog sistema jeste da olakša funkcionisanje jednog on-line restorana. To s
 Glavna podela učesnika sistema je na:
 
 \begin{itemize}
-    \item Korisnik 
+    \item Korisnik
+    \begin{itemize}
+        \item vrši porudžbine putem telefona ili veb stranice
+        \item plaća dostavljaču utvrđeni iznos po prijemu paketa
+    \end{itemize}
     \item Koordinator
+    \begin{itemize}
+        \item prihvata ili odbacuje narudžbinu od korisnika
+        \item u slučaju prihvatanja obaveštava kuvara o detaljima porudžbine
+        \item po prijemu paketa od kuvara ili dekoratera, prosleđuje ga dostavljaču uz napomenu o adresi korisnika
+    \end{itemize}
     \item Kuvar
+    \begin{itemize}
+        \item priprema hranu zahtevanu od strane koordinatora
+        \item u slučaju da je porudžbina tipa keteringa, pripremljenu hranu prosleđuje dekorateru
+        \item po potrebi, obaveštava magacionera o nedovoljnim zalihama namirnica u kuhinji
+    \end{itemize}
     \item Dostavljač
+    \begin{itemize}
+        \item prihvata paket od koordinatora, zajedno sa adresom isporuke
+        \item isporučuje paket na datu adresu u najkraćem vremenskom roku
+        \item obaveštava korisnika o ceni, vrši naplatu isporučenih dobara
+        \item po potrebi, obaveštava menadžera o nedovoljnim zalihama goriva/potrebnim popravkama na vozilu za isporuke
+    \end{itemize}
     \item Magacioner
+    \begin{itemize}
+        \item vodi računa o količini zaliha namirnica u magacinu
+        \item vrši prenos zahtevanih namirnica, od strane kuvara, u kuhinju
+        \item vrši skladištenje pristiglih namirnica u magacin
+        \item koordinira isporukama sa dobavljačem
+    \end{itemize}
     \item Menadžer
+    \begin{itemize}
+        \item vodi računa o prilivu i odlivu novca restorana
+        \item koordinira zaposlenima
+    \end{itemize}
     \item Dekorater
+    \begin{itemize}
+        \item sarađuje sa kuvarom u aranžiranju keteringa
+        \item završenu narudžbinu prosleđuje koordinatoru
+    \end{itemize}
     \item Dobavljač
+    \begin{itemize}
+        \item vrši prijem dobara od strane distrbutera
+        \item vrši isporuku dobara u magacin
+    \end{itemize}
 \end{itemize}
