@@ -237,4 +237,29 @@ Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od to
         \item Dostavljač odlazi na adresu dostave radi isporuke porudžbine.
 \end{enumerate}
 \end{itemize}
+
+ \subsubsection{Isporuka porudžbine na traženu adresu}
+ \begin{itemize}
+    \item \textbf{Kratak opis}: Dostavljač vrši dostavu paketa korisniku i naplaćuje uslugu.
+    \item \textbf{Učesnici}:
+    Dostavljač, korisnik.
+    \item \textbf{Preduslovi}:
+    Postoji slobodan dostavljač za vršenje isporuke.
+    \item \textbf{Postuslovi}:
+    Korisnik je primio paket.
+    \item \textbf{Glavni tok}:
+    \begin{enumerate}
+        \item Dostavljač dolazi na traženu adresu.
+        \item Dostavljač obaveštava korisnika putem telefona da je porudžbina stigla.
+        \item Korisnik se sastaje sa dostavljačem.
+        \item Korisnik plaća uslugu kešom ili karticom.
+        \item Dostavljač predaje paket korisniku.
+ \end{enumerate}
+    \item \textbf{Alternativni tokovi}:\\
+        2. Dostavljač ne može dobiti korisnika. Čekaće maksimum deset minuta; ukoliko do tada ne stupi u kontakt sa korisnikom, paket se vraća u restoran.
+    \item \textbf{Dodatne informacije}:
+     \begin{itemize}
+     \item U slučaju da korisnik plaća kešom, a dostavljač nema sitan novac za vraćanje kusura, u obavezi je da u najkraćem roku u blizini nađe sitan novac.
+ \end{itemize}
  
+ \end{itemize}
