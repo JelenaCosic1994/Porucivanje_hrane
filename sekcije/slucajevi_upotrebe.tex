@@ -66,6 +66,31 @@
  \end{itemize}
  \end{itemize}
 
+ \subsubsection{Deaktivacija naloga otpuštenog radnika}
+ \begin{itemize}
+    \item \textbf{Kratak opis}:
+   Koordinatoru ili Magacioneru koji je otpušten Menadžer deaktivira nalog kako više ne bi imao pristup sistemu.
+    \item \textbf{Učesnici}:
+    Menadžer, Koordinator, Magacioner.
+    \item \textbf{Preduslovi}:
+    Magacioner/Koordinator je dobio/dao otkaz u restoranu. Takođe, u sistemu postoji njegov nalog.
+    \item \textbf{Postuslovi}:
+    Magacioneru/Koordinatoru je deaktiviran nalog. 
+    \item \textbf{Glavni tok}:
+    \begin{enumerate}
+        \item Menadžer odlazi na vebsajt i prijavljuje se unošenjem svog korisničkog imena i šifre.
+        \item Menadžer pronalazi nalog bivšeg zaposlenog.
+        \item Menadžer deaktivira nalog klikom na dugme 'Deaktiviraj'.
+        \item Menadžer potvrđuje unete promene klikom na dugme 'Sačuvaj'.
+        \item Sistem beleži promene u bazi.
+        \item Sistem obaveštava Magacionera/Koordinatora o deaktivaciji naloga slanjem e-mail poruke.
+    \end{enumerate}
+\item \textbf{Dodatne informacije}
+ \begin{itemize}
+     \item Pri deaktivaciji naloga, nalog se ne briše, tako da u slučaju ponovnog zaposlenja, dovoljno je da Menadžer aktivira postojeći nalog.
+ \end{itemize}
+ \end{itemize}
+
 \subsection{Upravljanje porudžbinom}
 Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
 
@@ -234,7 +259,6 @@ Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od to
         dostavljača da postoji porudžbina koju 
         treba da dostavi.
         \item Dostavljač preuzima iz kuhinje paket koji treba isporučiti zajedno sa ceduljom na kojoj se nalazi informacija o adresi isporuke i ceni.
-        \item Dostavljač odlazi na adresu dostave radi isporuke porudžbine.
 \end{enumerate}
 \end{itemize}
 
@@ -262,4 +286,4 @@ Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od to
      \item U slučaju da korisnik plaća kešom, a dostavljač nema sitan novac za vraćanje kusura, u obavezi je da u najkraćem roku u blizini nađe sitan novac.
  \end{itemize}
  
- \end{itemize}
+ \subsection{Upravljanje osobljem}
