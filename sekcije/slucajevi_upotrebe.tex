@@ -1,4 +1,5 @@
-\section{Slučajevi upotrebe}
+\newpage
+\section{Slu\v cajevi upotrebe}
 \subsection{Upravljanje nalozima}
 \subsubsection{Registracija korisnika na sajtu restorana}
 \begin{itemize}
@@ -32,75 +33,121 @@
  \end{itemize}
  \end{itemize}
  
- \\
+ 
+\subsubsection{Ocenjivanje usluge restorana}
+\begin{itemize}
+    \item \textbf{Kratak opis}:
+    Korisniku je data mogućnost da napiše svoj utisak o usluzi restorana koji je vidljiv drugim korisnicima.
+    \item \textbf{Učesnici}:
+    Korisnik
+    \item \textbf{Preduslovi}:
+    Postojanje korisničkog naloga. 
+    \item \textbf{Postuslovi}:
+    Korisnik je napisao u komentaru svoj utisak
+    o restoranu.
+    \item \textbf{Glavni tok}:
+   \begin{enumerate}
+        \item Korisnik odlazi na nalog restorana i otvara stranicu Utisci.
+        \item Korisnik popunjava formu za ostavljanje utiska.
+        \item Sistem vrši validaciju utiska.
+        \item Ažurira se stranica Utisci.
+        \item Sistem obaveštava korisnika da je uspešno postavio komentar.
+\end{enumerate}
+\end{itemize}
+\begin{itemize}
+\item \textbf {Alternativni tokovi}:\\ 
+ 3a: Korisnik nije popunio sva obavezna polja.\\
+ Slučaj upotrebe se nastavlja na koraku 2.\\
+ 3b: Korisnik je uneo e-mail adresu koja ne odgovara nijednom postojećem nalogu korisnika. \\
+ Korisnik dobija odgovarajuću poruku i postavlja mu se pitanje da li želi da se registruje.
+ 
+\quad 3b1: Korisnik potvrđuje da želi da se registruje.
+Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restorana".Nakon završetka tog slučaja upotrebe vraća se
+na korak 2. 
+
+\quad 3b2: Korisnik ne želi da se registruje. Završava se slučaj upotrebe.
+\end{itemize}
+
+\begin{itemize} 
+     \item \textbf{Dodatne informacije}
+ \begin{itemize}
+     \item Obavezna polja koja korisnik mora popuniti da bi ostavio utisak su validna e-mail adresa, ime i komentar.
+    \item Sistem validira utisak tako što proverava da li postoji nalog korisnika kome odgovara uneta e-mail adresa.
+ \end{itemize}
+ \end{itemize}
+ 
  \subsubsection{Kreiranje naloga za radnika upravo zaposlenog u restoranu}
 \begin{itemize}
     \item \textbf{Kratak opis}:
-   Radniku koji je upravo zaposlen u restoranu na poziciji koordinatora ili magacionera potrebno je napraviti nalog kako bi imao pristup sistemu.
+   Radniku koji je upravo zaposlen u restoranu potrebno je napraviti nalog kako bi imao pristup sistemu.
     \item \textbf{Učesnici}:
-    Menadžer, Koordinator, Magacioner
+    Menadžer
     \item \textbf{Preduslovi}:
-    Magacioner/Koordinator je upravo dobio posao u restoranu.
+    Zaposleni je upravo dobio posao u restoranu.
     \item \textbf{Postuslovi}:
-    Magacioner/Koordinator ima svoj nalog. 
+    Zaposleni ima svoj nalog. 
     \item \textbf{Glavni tok}:
    \begin{enumerate}
         \item Menadžer odlazi na vebsajt i prijavljuje se unošenjem svog korisničkog imena i šifre
         \item Menadžer otvara formu za unošenje novog naloga za zaposlene
         \item Menadžer popunjava formu svim potrebnim podacima
+        \item Menadžer odredjuje prava pristupa nalozima zaposlenih
         \item Menadžer potvrđuje unete podatke klikom na dugme 'Sačuvaj'
         \item Sistem beleži novog zaposlenog u bazi
-        \item Sistem obaveštava Magacionera/Koordinatora o uspešnosti registracije slanjem e-mail poruke
+        \item Sistem obaveštava zaposlenog o uspešnosti registracije slanjem e-mail poruke
 \end{enumerate}
 \end{itemize}
 \begin {itemize}
-\item \textbf {Alternativni tokovi}: 
- 3a: Menadzer nije uneo ispravne podatke za registraciju.\\
+\item \textbf {Alternativni tokovi}:\\
+ 3a: Menadžer nije uneo ispravne podatke za registraciju.\\
  Slučaj upotrebe se nastavlja na koraku 2.
  \end{itemize}
  \begin{itemize} 
      \item \textbf{Dodatne informacije}
  \begin{itemize}
-     \item Neophodni podaci za pravljenje naloga zaposlenom su validna e-mail adresa, ime, prezime, adresa, korisničko ime, lozinka, kao i odabir opcije da li je zaposleni, čiji je nalog u nastanku, koordinator ili magacioner.
-    \item Sistem validira novog korisnika tako što proverava da li već postoji nalog sa unetom e-mail adresom. Neophodno je i da korisničko ime bude jedinstveno.
+     \item Neophodni podaci za pravljenje naloga zaposlenom su validna e-mail adresa, ime, prezime, adresa, korisničko ime, lozinka, kao i odabir funkcije zaposlenog, čiji je nalog u nastanku.
+    \item Sistem validira novog zaposlenog tako što proverava da li već postoji nalog sa unetom e-mail adresom. Neophodno je i da korisničko ime bude jedinstveno.
  \end{itemize}
  \end{itemize}
 
  \subsubsection{Deaktivacija naloga otpuštenog radnika}
  \begin{itemize}
     \item \textbf{Kratak opis}:
-   Koordinatoru ili Magacioneru koji je otpušten Menadžer deaktivira nalog kako više ne bi imao pristup sistemu.
+   Radniku koji je otpušten menadžer deaktivira nalog kako više ne bi imao pristup sistemu.
     \item \textbf{Učesnici}:
-    Menadžer, Koordinator, Magacioner.
+    Menadžer.
     \item \textbf{Preduslovi}:
-    Magacioner/Koordinator je dobio/dao otkaz u restoranu. Takođe, u sistemu postoji njegov nalog.
+    Radnik je dobio/dao otkaz u restoranu. Takođe, u sistemu postoji njegov nalog.
     \item \textbf{Postuslovi}:
-    Magacioneru/Koordinatoru je deaktiviran nalog. 
+    Radniku je deaktiviran nalog. 
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Menadžer odlazi na vebsajt i prijavljuje se unošenjem svog korisničkog imena i šifre.
+        \item Menadžer odlazi na veb stranicu i prijavljuje se unošenjem svog korisničkog imena i šifre.
         \item Menadžer pronalazi nalog bivšeg zaposlenog.
         \item Menadžer deaktivira nalog klikom na dugme 'Deaktiviraj'.
         \item Menadžer potvrđuje unete promene klikom na dugme 'Sačuvaj'.
         \item Sistem beleži promene u bazi.
-        \item Sistem obaveštava Magacionera/Koordinatora o deaktivaciji naloga slanjem e-mail poruke.
+        \item Sistem obaveštava radnika o deaktivaciji naloga slanjem e-mail poruke.
     \end{enumerate}
 \item \textbf{Dodatne informacije}
  \begin{itemize}
-     \item Pri deaktivaciji naloga, nalog se ne briše, tako da u slučaju ponovnog zaposlenja, dovoljno je da Menadžer aktivira postojeći nalog.
+     \item Pri deaktivaciji naloga, nalog se ne briše, tako da u slučaju ponovnog zaposlenja, dovoljno je da menadžer aktivira postojeći nalog.
  \end{itemize}
  \end{itemize}
-
+\newpage
 \subsection{Upravljanje porudžbinom}
-Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
+Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
 
-\includegraphics[width=136mm]{slike/Upravljanje_porudzbinom.png}\\
-\begin{center}
-\caption{Slika 3. Dijagram stanja}\\
-\end{center}
+\begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.6\textheight]{slike/Upravljanje_porudzbinom.png}
+    \end{center}
+    \caption{Dijagram stanja} % opis ce stajati ispod slike
+    \label{fig:slika3}
+\end{figure}
 
- 
- 
+
 \subsubsection{Onlajn naručivanje}
 \begin{itemize}
     \item \textbf{Kratak opis}: Korisnik naručuje željenu hranu putem veb stranice. Porudžbina biva prihvaćena ili odbijena od strane koordinatora.
@@ -116,14 +163,16 @@ Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od to
     5. Sistem obaveštava koordinatora o prispeću zahteva.\\
     6. Koordinator proverava da li je moguće realizovati porudžbinu.\\
     7. Koordinator utvrđuje da svih namirnica potrebnih za datu porudžbinu ima u dovoljnim količinama.\\
-    8. Koordinator prihvata porudžbinu klikom na dugme "Prihvati".\\
-    9. Korisnik biva obavešten, od strane sistema, da je porudžbina prihvaćena.
+    8. Koordinator beleži na cedulju detalje porudžbine. 
+    9. Koordinator prihvata porudžbinu klikom na dugme "Prihvati".\\
+    10. Korisnik biva obavešten, od strane sistema, da je porudžbina prihvaćena ili ne.
     
      \item \textbf{Alternativni tokovi}:
      
-     7. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine.\\
-     8. Koordinator odbija porudžbinu klikom na dugme "Odbij".\\
-     9. Korisnik biva obavešten, od strane sistema, da je porudžbina odbijena uz propratnu poruku.
+     7a. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine. Tok se nastvalja na koraku 9a.\\
+     9a. Koordinator odbija porudžbinu klikom na dugme "Odbij".Tok se nastvalja na koraku 10.\\
+     7b. Koordinator proverava da li je vrednost parudžbine veća od definisane vrednosti za poklon uz porudžbinu. Tok se nastvalja na koraku 8b.\\
+     8b. Koordinator beleži na cedulju dodatak porudžbini koji korisnik dobija kao poklon. Tok se nastvalja na koraku 9.\\
     
 \end{itemize}
 
@@ -144,7 +193,7 @@ Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od to
     
     \item \textbf{Alternativni tokovi}:
      
-     2. Korisnik biva obavešten, od strane telefonskog aprata, da restoran trenutno ne radi.\\
+     2. Korisnik biva obavešten, od strane telefonskog aparata, da restoran trenutno ne radi.\\
      4. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine.\\
      5. Koordinator odbija porudžbinu i saopštava korisniku.\\
      6. Korisnik biva obavešten, od strane koordinatora, da je porudžbina odbijena.
@@ -152,7 +201,16 @@ Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od to
      
 \end{itemize}
 
+ \begin{itemize} 
+     \item \textbf{Dodatne informacije}
+ \begin{itemize}
+     \item Neophodni podaci za registraciju korisnika su validna e-mail adresa, ime, prezime, adresa, korisničko ime i lozinka.
+    \item Sistem validira novog korisnika tako što proverava da li već postoji nalog sa unetom e-mail adresom. Neophodno je i da korisničko ime bude jedinstveno.
+ \end{itemize}
+ \end{itemize}
+ 
 
+\newpage
 \subsection{Realizacija zahteva}
 \subsubsection{Prosleđivanje porudžbine od koordinatora ka kuvaru}
 \begin{itemize}
@@ -276,14 +334,169 @@ Na slici je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od to
         \item Dostavljač dolazi na traženu adresu.
         \item Dostavljač obaveštava korisnika putem telefona da je porudžbina stigla.
         \item Korisnik se sastaje sa dostavljačem.
-        \item Korisnik plaća uslugu kešom ili karticom.
+        \item Korisnik plaća uslugu gotovinom ili karticom.
         \item Dostavljač predaje paket korisniku.
  \end{enumerate}
     \item \textbf{Alternativni tokovi}:\\
         2. Dostavljač ne može dobiti korisnika. Čekaće maksimum deset minuta; ukoliko do tada ne stupi u kontakt sa korisnikom, paket se vraća u restoran.
     \item \textbf{Dodatne informacije}:
      \begin{itemize}
-     \item U slučaju da korisnik plaća kešom, a dostavljač nema sitan novac za vraćanje kusura, u obavezi je da u najkraćem roku u blizini nađe sitan novac.
+     \item U slučaju da korisnik plaća gotovinom, a dostavljač nema sitan novac za vraćanje kusura, u obavezi je da u najkraćem roku u blizini nađe sitan novac.
+ \end{itemize}
  \end{itemize}
  
  \subsection{Upravljanje osobljem}
+ Upravljanje osobljem predstavlja podno\v senje i obradu zahteva za odmorom ili nepla\'cenim odmorom, kao i njihovo evidentiranje u sistem. U ovim slu\v cajevima upotrebe u\v cesnici su menad\v zer i bilo koji zaposleni.
+ 
+ 
+ \begin{itemize}
+     \item Zaposleni zahteva odredjeni broj dana za odmor ili nepla\' ceni odmor na osnovu toga da li ima na raspolaganju dane za odmor ili ne.
+     \item Zadu\v zenje menad\v zera je da prispele zahteve obradi, po\v salje odgovor, kao i da sve to evidentira u sistemu.
+ \end{itemize}
+ Slika 4 fali
+ 
+  \subsubsection{Podno\v senje zahteva za odmor i njegova obrada }
+ \begin{itemize}
+    \item \textbf{Kratak opis}:
+   Zaposleni podnosi zahtev za odmor. Menad\v zer obra\dj uje njegov zahtev.
+    \item \textbf{Učesnici}:
+    Zaposleni, menad\v zer
+    \item \textbf{Preduslovi}: Nema
+    \item \textbf{Postuslovi}:
+    Zaposlen je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
+    \item \textbf{Glavni tok}:
+    \begin{enumerate}
+        \item Zaposleni se prijavljuje na sistem.
+        \item Zaposleni proverava me\dj u informacijama na svom profilu da li ima na raspolaganju dane za odmor i koliko.
+        \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor.
+        \item Zahtev za odmor se evidentira u sistemu i prosle\dj uje na odobravanje menad\v zeru.
+        \item Menad\v zer je obave\v sten da je primio zahtev za odmor(mejl).
+        \item Menad\v zer se prijavljuje na sistem.
+        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
+        \item Na osnovu procene stanja menad\v zer donosi odluku i to se evidentira u sistemu.
+        \item Zaposleni dobija informaciju da li je njegov zahtev za odmor odobren ili ne.
+    \end{enumerate}
+\item \textbf{Alternativni tokovi}\\
+        2a. Zaposleni nema nijedan dan za odmor. Slu\v caj upotrebe se zavr\v sava.
+        3a. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se nastavlja na koraku 3.
+ 
+ \item \textbf{Dodatne informacije}
+ \begin{itemize}
+     \item Sistem automatski \v salje mejl menad\v zeru kada stigne zahtev za odmor.
+
+ \end{itemize}
+ \end{itemize}
+ 
+ \subsubsection{Podno\v senje zahteva za nepla\'ceni odmor i njegova obrada }
+ \begin{itemize}
+    \item \textbf{Kratak opis}:
+   Zaposleni podnosi zahtev za nepla\'ceni odmor. Menad\v zer obra\dj uje njegov zahtev.
+    \item \textbf{Učesnici}:
+    Zaposleni, menad\v zer
+    \item \textbf{Preduslovi}: Nema
+    \item \textbf{Postuslovi}:
+    Zaposlen je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
+    \item \textbf{Glavni tok}:
+    \begin{enumerate}
+        \item Zaposleni se prijavljuje na sistem.
+        \item Zaposleni vr\v si odabir odre\dj enih datuma za nepla\'ceni odmor.
+        \item Zahtev za nepla\'ceni odmor se evidentira u sistemu i prosle\dj uje na odobravanje menad\v zeru.
+        \item Menad\v zer je obave\v sten da je primio zahtev za nepla\'ceni odmor(mejl).
+        \item Menad\v zer se prijavljuje na sistem.
+        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
+        \item Na osnovu procene stanja menad\v zer donosi odluku i to se evidentira u sistemu.
+        \item Zaposleni dobija informaciju da li je njegov zahtev za nepla\'ceni odmor odobren ili ne.
+    \end{enumerate}
+\item \textbf{Alternativni tokovi}\\
+        2a. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se nastavlja na koraku 2.
+ 
+ \item \textbf{Dodatne informacije}
+ \begin{itemize}
+     \item Sistem automatski \v salje mejl menad\v zeru kada stigne zahtev za nepla\'ceni odmor.
+
+ \end{itemize}
+ \end{itemize}
+  
+ 
+ \subsection{Upravljanje namirnicama}
+ Upravljanje namirnicama podrazumeva vođenje računa o zalihama hrane i pića u restoranu. Ovo je neophodno da bi bilo koji restoran mogao da funkcioniše. Odnosi se na poručivanje hrane, prijem robe i evidentiranje prispele robe u sistemu. U ovom procesu učestvuju magacioner i dobavljač.
+ Na Slici \ref{fig:slika5} predstavljen je dijagram slučajeva upotrebe za upravljanje namirnicama.
+ 
+ \begin{itemize}
+     \item Magacioner na osnovu stanja namirnica u magacinu sastavlja spisak za nabavku i obaveštava dobavljača o porudžbini. Kada roba pristigne, smešta je u magacin i evidentira prispeće robe u sistemu.
+     \item Dobavljač isporučuje namirnice restoranu.
+ \end{itemize}
+
+% \includegraphics[width=136mm]{slike/Upravljanje_namirnicama.JPG}\\
+% \begin{center}
+% \caption{Slika 7. Dijagram slučajeva upotrebe}
+% \end{center}
+\begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.5\textheight]{slike/Upravljanje_namirnicama.JPG}
+    \end{center}
+    \caption{Dijagram slu\v cajeva upotrebe} % opis ce stajati ispod slike
+    \label{fig:slika5}
+\end{figure}
+ 
+ 
+ 
+ 
+ 
+ 
+ \subsubsection{Naručivanje nedostajućih namirnica}
+ \begin{itemize}
+    \item \textbf{Kratak opis}:
+   Magacioner od dobavljača naručuje namirnice koje nedostaju u magacinu.
+    \item \textbf{Učesnici}:
+    Magacioner, dobavljač
+    \item \textbf{Preduslovi}:
+    U magacinu nedostaje izvesna količina određenih namirnica.
+    \item \textbf{Postuslovi}:
+    Dobavljaču je obavešten o količini i tipu namirnica koje treba da dobavi. 
+    \item \textbf{Glavni tok}:
+    \begin{enumerate}
+        \item Magacioner pregledom inventara u sistemu utvrđuje da izvesna količina namirnica nedostaje.
+        \item Magacioner pravi spisak koji sadrži sve namirnice koje će poručiti.
+        \item Magacioner poziva dobavljača i poručuje namirnice sa spiska.
+        \item Dobavljač saopštava magacioneru koje namirnice može u kom vremenskom roku da mu isporuči.
+        \item Magacioner potvrđuje svoju porudžbinu.
+    \end{enumerate}
+\item \textbf{Alternativni tokovi}\\
+        5a. Magacioner otkazuje svoju porudžbinu. Tok se nastavlja\\ na koraku 3.
+ 
+ \item \textbf{Dodatne informacije}
+ \begin{itemize}
+     \item 
+    Magacioner otkazuje porudžbinu u slučaju da mu vremenski rok\\ koji mu dobavljač predlaže ne odgovara. Zatim poziva drugog dobavljača kako bi poručio namirnice.
+
+ \end{itemize}
+ \end{itemize}
+ 
+  \subsubsection{Prijem prispelih namirnica i njihovo evidentiranje u sistemu}
+ \begin{itemize}
+    \item \textbf{Kratak opis}:
+   Dobavljač isporučuje poručenu robu magacioneru. Magacioner smešta namirnice u magacin i evidentira nabavku u sistemu.
+    \item \textbf{Učesnici}:
+    Magacioner, dobavljač
+    \item \textbf{Preduslovi}:
+    Magacioner je poručio namirnice od dobavljača.
+    \item \textbf{Postuslovi}:
+    Magacin je dopunjen nedostajućim namirnicama i stanje magacina je ažurirano u sistemu. 
+    \item \textbf{Glavni tok}:
+    \begin{enumerate}
+        \item Dobavljač pristiže na adresu restorana.
+        \item Dobavljač obaveštava magacionera da je stigao.
+        \item Dostavljač i magacioner se sastaju.
+        \item Magacioner plaća dostavljaču.
+        \item Dostavljač predaje robu magacioneru.
+        \item Magacioner smešta robu u magacin.
+        \item Magacioner u sistemu evidentira pristiglu nabavku.
+        \item Sistem ažurira stanje namirnica u magacinu.  
+        
+    \end{enumerate}
+
+\end{itemize}
+ 
+ 
