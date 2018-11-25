@@ -12,26 +12,27 @@
     \item \textbf{Postuslovi}:
     Korisnik je registrovan. 
     \item \textbf{Glavni tok}:
-   \begin{enumerate}
+    \begin{enumerate}
         \item Korisnik odlazi na nalog restorana i otvara formu za registraciju
         \item Korisnik popunjava formu za registraciju
         \item Sistem vrši validaciju registracije
         \item Sistem beleži novog korisnika u bazi
         \item Sistem obaveštava korisnika o uspešnosti registracije
-\end{enumerate}
+    \end{enumerate}
 \end{itemize}
+
 \begin {itemize}
-\item \textbf {Alternativni tokovi}: 
+\item \textbf {Alternativni tokovi}: \\
  3a: Korisnik nije uneo ispravne podatke za registraciju.\\
  Slučaj upotrebe se nastavlja na koraku 2.
- \end{itemize}
+\end{itemize}
  \begin{itemize} 
-     \item \textbf{Dodatne informacije}
- \begin{itemize}
-     \item Neophodni podaci za registraciju korisnika su validna e-mail adresa, ime, prezime, adresa, korisničko ime i lozinka.
-    \item Sistem validira novog korisnika tako što proverava da li već postoji nalog sa unetom e-mail adresom. Neophodno je i da korisničko ime bude jedinstveno.
- \end{itemize}
- \end{itemize}
+    \item \textbf{Dodatne informacije}
+    \begin{itemize}
+        \item Neophodni podaci za registraciju korisnika su validna e-mail adresa, ime, prezime, adresa, korisničko ime i lozinka.
+        \item Sistem validira novog korisnika tako što proverava da li već postoji nalog sa unetom e-mail adresom. Neophodno je i da korisničko ime bude jedinstveno.
+    \end{itemize}
+\end{itemize}
  
  
 \subsubsection{Ocenjivanje usluge restorana}
@@ -52,7 +53,7 @@
         \item Sistem vrši validaciju utiska.
         \item Ažurira se stranica Utisci.
         \item Sistem obaveštava korisnika da je uspešno postavio komentar.
-\end{enumerate}
+    \end{enumerate}
 \end{itemize}
 \begin{itemize}
 \item \textbf {Alternativni tokovi}:\\ 
@@ -155,18 +156,18 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
     \item \textbf{Preduslovi}: Postojanje korisničkog naloga.
     \item \textbf{Postuslovi}: Prihvaćena, odnosno odbijena porudžbina.
     \item \textbf{Glavni tok}:
-    
-    1. Korisnik se prijavljuje na sajt restorana.\\
-    2. Korisnik vrši odabir željenih proizvoda.\\
-    3. Korisnik potvrđuje željenu porudžbinu klikom na dugme "Poruči".\\
-    4. Sistem odbija porudžbinu u slučaju da restoran trenutno ne radi i obaveštava korisnika o tome.\\
-    5. Sistem obaveštava koordinatora o prispeću zahteva.\\
-    6. Koordinator proverava da li je moguće realizovati porudžbinu.\\
-    7. Koordinator utvrđuje da svih namirnica potrebnih za datu porudžbinu ima u dovoljnim količinama.\\
-    8. Koordinator beleži na cedulju detalje porudžbine. 
-    9. Koordinator prihvata porudžbinu klikom na dugme "Prihvati".\\
-    10. Korisnik biva obavešten, od strane sistema, da je porudžbina prihvaćena ili ne.
-    
+    \begin{enumerate}
+        \item Korisnik se prijavljuje na sajt restorana.
+        \item Korisnik vrši odabir željenih proizvoda.
+        \item Korisnik potvrđuje željenu porudžbinu klikom na dugme "Poruči".
+        \item Sistem odbija porudžbinu u slučaju da restoran trenutno ne radi i obaveštava korisnika o tome.
+        \item Sistem obaveštava koordinatora o prispeću zahteva.
+        \item Koordinator proverava da li je moguće realizovati porudžbinu.
+        \item Koordinator utvrđuje da svih namirnica potrebnih za datu porudžbinu ima u dovoljnim količinama.
+        \item Koordinator beleži na cedulju detalje porudžbine.
+        \item Koordinator prihvata porudžbinu klikom na dugme "Prihvati".
+        \item Korisnik biva obavešten, od strane sistema, da je porudžbina prihvaćena ili ne.
+     \end{enumerate}
      \item \textbf{Alternativni tokovi}:
      
      7a. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine. Tok se nastvalja na koraku 9a.\\
@@ -183,32 +184,22 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
     \item \textbf{Preduslovi}: Postojanje registrovanog telefonskog aparata u restoranu.
     \item \textbf{Postuslovi}: Prihvaćena, odnosno odbijena porudžbina.
      \item \textbf{Glavni tok}:
-    
-    1. Korisnik vrši poziv restorana.\\
-    2. Korisnik vrši odabir željenih proizvoda.\\
-    3. Koordinator proverava da li je moguće realizovati porudžbinu.\\
-    4. Koordinator utvrđuje da svih namirnica potrebnih za datu porudžbinu ima u dovoljnim količinama.\\
-    5. Koordinator prihvata porudžbinu i saopštava korisniku.\\
-    6. Korisnik biva obavešten, od strane koordinatora, da je porudžbina prihvaćena.
-    
-    \item \textbf{Alternativni tokovi}:
-     
-     2. Korisnik biva obavešten, od strane telefonskog aparata, da restoran trenutno ne radi.\\
-     4. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine.\\
-     5. Koordinator odbija porudžbinu i saopštava korisniku.\\
-     6. Korisnik biva obavešten, od strane koordinatora, da je porudžbina odbijena.
+    \begin{enumerate}
+        \item Korisnik vrši poziv restorana.
+        \item Korisnik vrši odabir željenih proizvoda.
+        \item Koordinator proverava da li je moguće realizovati porudžbinu.
+        \item Koordinator utvrđuje da svih namirnica potrebnih za datu porudžbinu ima u dovoljnim količinama.
+        \item Koordinator prihvata porudžbinu i saopštava korisniku.
+        \item Korisnik biva obavešten, od strane koordinatora, da je porudžbina prihvaćena.
+    \end{enumerate}
+    \item \textbf{Alternativni tokovi}:\\
+     2a. Korisnik biva obavešten, od strane telefonskog aparata, da restoran trenutno ne radi.\\
+     4a. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine.\\
+     5a. Koordinator odbija porudžbinu i saopštava korisniku.\\
+     6a. Korisnik biva obavešten, od strane koordinatora, da je porudžbina odbijena.
     
      
 \end{itemize}
-
- \begin{itemize} 
-     \item \textbf{Dodatne informacije}
- \begin{itemize}
-     \item Neophodni podaci za registraciju korisnika su validna e-mail adresa, ime, prezime, adresa, korisničko ime i lozinka.
-    \item Sistem validira novog korisnika tako što proverava da li već postoji nalog sa unetom e-mail adresom. Neophodno je i da korisničko ime bude jedinstveno.
- \end{itemize}
- \end{itemize}
- 
 
 \newpage
 \subsection{Realizacija zahteva}
@@ -250,7 +241,7 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         jelo pripremljeno.
 \end{enumerate}
  \item \textbf{Alternativni tokovi}:\\
-     1. Kuvar je utvrdio da u kuhinji ne postoje
+     1a. Kuvar je utvrdio da u kuhinji ne postoje
      sve namirnice koje su neophodne.
      \\ Prelazi se na slučaj
     upotrebe "3.3.3 Donošenje namirnica koje nedostaju u kuhinji". Nakon završetka tog slučaja upotrebe
@@ -292,7 +283,7 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         \item Kuvar obaveštava koordinatora da
         je porudžbina pripremljena i može da 
         se aranžira.
-        \item Kooordinator obaveštava
+        \item Koordinator obaveštava
         dekoratera da postoji porudžbina koju je potrebno aranžirati.
         \item Dekorater preuzima porudžbinu i aranžira je.
         \item Dekorater javlja koordinatoru da 
@@ -338,7 +329,7 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         \item Dostavljač predaje paket korisniku.
  \end{enumerate}
     \item \textbf{Alternativni tokovi}:\\
-        2. Dostavljač ne može dobiti korisnika. Čekaće maksimum deset minuta; ukoliko do tada ne stupi u kontakt sa korisnikom, paket se vraća u restoran.
+        2a. Dostavljač ne može dobiti korisnika. Čekaće maksimum deset minuta; ukoliko do tada ne stupi u kontakt sa korisnikom, paket se vraća u restoran.
     \item \textbf{Dodatne informacije}:
      \begin{itemize}
      \item U slučaju da korisnik plaća gotovinom, a dostavljač nema sitan novac za vraćanje kusura, u obavezi je da u najkraćem roku u blizini nađe sitan novac.
@@ -368,8 +359,9 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
     \begin{enumerate}
         \item Zaposleni se prijavljuje na sistem.
         \item Zaposleni proverava me\dj u informacijama na svom profilu da li ima na raspolaganju dane za odmor i koliko.
-        \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor.
+        \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor/nepla\'ceni odmor.
         \item Zahtev za odmor se evidentira u sistemu i prosle\dj uje na odobravanje menad\v zeru.
+        \item Sistem obave\v stava menad\v zera da je stigao zahtev za odmor/ nepla\'ceni odmor slanjem e-mail poruke
         \item Menad\v zer je obave\v sten da je primio zahtev za odmor(mejl).
         \item Menad\v zer se prijavljuje na sistem.
         \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
@@ -377,7 +369,7 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         \item Zaposleni dobija informaciju da li je njegov zahtev za odmor odobren ili ne.
     \end{enumerate}
 \item \textbf{Alternativni tokovi}\\
-        2a. Zaposleni nema nijedan dan za odmor. Slu\v caj upotrebe se zavr\v sava.
+        2a. Zaposleni nema nijedan dan za odmor. Slu\v caj upotrebe se nastavlja na koraku 3.
         3a. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se nastavlja na koraku 3.
  
  \item \textbf{Dodatne informacije}
