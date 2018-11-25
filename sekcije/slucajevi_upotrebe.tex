@@ -352,37 +352,32 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
    Zaposleni podnosi zahtev za odmor. Menad\v zer obra\dj uje njegov zahtev.
     \item \textbf{Učesnici}:
     Zaposleni, menad\v zer
-    \item \textbf{Preduslovi}: Nema
+    \item \textbf{Preduslovi}: Zaposleni ima na raspolaganju dane za odmor.
     \item \textbf{Postuslovi}:
     Zaposlen je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Zaposleni se prijavljuje na sistem.
-        \item Zaposleni proverava me\dj u informacijama na svom profilu da li ima na raspolaganju dane za odmor i koliko.
-        \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor/nepla\'ceni odmor.
-        \item Zahtev za odmor se evidentira u sistemu i prosle\dj uje na odobravanje menad\v zeru.
-        \item Sistem obave\v stava menad\v zera da je stigao zahtev za odmor/ nepla\'ceni odmor slanjem e-mail poruke
-        \item Menad\v zer je obave\v sten da je primio zahtev za odmor(mejl).
-        \item Menad\v zer se prijavljuje na sistem.
-        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
+        \item Zaposleni se prijavljuje na sistem
+        \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor
+        \item Zahtev za odmor se evidentira u sistemu 
+        \item Sistem obave\v stava menad\v zera da je stigao zahtev za odmor slanjem e-mail poruke
+        % \item Menad\v zer je obave\v sten da je primio zahtev za odmor ili nepla\'ceni odmor (e-mail).
+        \item Menad\v zer se prijavljuje na sistem
+        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog
         \item Na osnovu procene stanja menad\v zer donosi odluku i to se evidentira u sistemu.
-        \item Zaposleni dobija informaciju da li je njegov zahtev za odmor odobren ili ne.
+        \item Sistem prera\v cunava i a\v zurira preostale dane za odmor zaposlenog
+        \item Sistem obave\v stava zaposlenog da je stigao odgovor na zahtev za odmor slanjem e-mail poruke.
+        \item Zaposleni dobija informaciju da li je njegov zahtev odobren ili ne
     \end{enumerate}
 \item \textbf{Alternativni tokovi}\\
-        2a. Zaposleni nema nijedan dan za odmor. Slu\v caj upotrebe se nastavlja na koraku 3.
         3a. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se nastavlja na koraku 3.
- 
- \item \textbf{Dodatne informacije}
- \begin{itemize}
-     \item Sistem automatski \v salje mejl menad\v zeru kada stigne zahtev za odmor.
 
- \end{itemize}
  \end{itemize}
  
  \subsubsection{Podno\v senje zahteva za nepla\'ceni odmor i njegova obrada }
  \begin{itemize}
     \item \textbf{Kratak opis}:
-   Zaposleni podnosi zahtev za nepla\'ceni odmor. Menad\v zer obra\dj uje njegov zahtev.
+  Zaposleni podnosi zahtev za nepla\'ceni odmor. Menad\v zer obra\dj uje njegov zahtev.
     \item \textbf{Učesnici}:
     Zaposleni, menad\v zer
     \item \textbf{Preduslovi}: Nema
@@ -390,24 +385,20 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
     Zaposlen je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Zaposleni se prijavljuje na sistem.
-        \item Zaposleni vr\v si odabir odre\dj enih datuma za nepla\'ceni odmor.
-        \item Zahtev za nepla\'ceni odmor se evidentira u sistemu i prosle\dj uje na odobravanje menad\v zeru.
-        \item Menad\v zer je obave\v sten da je primio zahtev za nepla\'ceni odmor(mejl).
-        \item Menad\v zer se prijavljuje na sistem.
-        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
-        \item Na osnovu procene stanja menad\v zer donosi odluku i to se evidentira u sistemu.
-        \item Zaposleni dobija informaciju da li je njegov zahtev za nepla\'ceni odmor odobren ili ne.
+        \item Zaposleni se prijavljuje na sistem
+        \item Zaposleni vr\v si odabir odre\dj enih datuma za nepla\'ceni odmor
+        \item Zahtev za nepla\'ceni odmor se evidentira u sistemu
+        \item Sistem obave\v stava menad\v zera da je stigao zahtev za nepla\'ceni odmor slanjem e-mail poruke
+        \item Menad\v zer se prijavljuje na sistem
+        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog
+        \item Sistem prera\v cunava i a\v zurira platu za zaposlenog
+        \item Sistem obave\v stava zaposlenog da je stigao odgovor na zahtev za nepla\'ceni odmor slanjem e-mail poruke.
+        \item Zaposleni dobija informaciju da li je njegov zahtev odobren ili ne
     \end{enumerate}
 \item \textbf{Alternativni tokovi}\\
         2a. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se nastavlja na koraku 2.
- 
- \item \textbf{Dodatne informacije}
- \begin{itemize}
-     \item Sistem automatski \v salje mejl menad\v zeru kada stigne zahtev za nepla\'ceni odmor.
 
- \end{itemize}
- \end{itemize}
+\end{itemize}
   
  
  \subsection{Upravljanje namirnicama}

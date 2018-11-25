@@ -5,17 +5,34 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
+\pagenumbering{arabic} %numeracija stranica arapskim brojevima
+
+\renewcommand{\refname}{Literatura} %da se zove literatura
+% \renewcommand{\figurename}{Slika} % zelimo da nam label bude Slika, ne Figure
+\usepackage{hyperref} %za linkovanje sadrzaja
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=blue,
+} %za razlicite boje linkova
+
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm}
+
 
 \begin{document}
 
 \input{sekcije/naslovna.tex}
-\renewcommand\contentsname{Sadr\v zaj}
-\tableofcontents
-\newpage
 
+\renewcommand{\contentsname}{Sadr\v zaj}
+\thispagestyle{empty} %ovu stranu ne numerisemo
+\tableofcontents %sadrzaj
+
+\newpage
+\renewcommand{\figurename}{Slika}
 \input{sekcije/uvod.tex}
 \input{sekcije/analiza_sistema.tex}
-
+\input{sekcije/slucajevi_upotrebe.tex}
 % \input{}
 % \input{}
 
