@@ -13,18 +13,18 @@
     Korisnik je registrovan. 
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Korisnik odlazi na nalog restorana i otvara formu za registraciju
-        \item Korisnik popunjava formu za registraciju
-        \item Sistem vrši validaciju registracije
+        \item Korisnik odlazi na nalog restorana i otvara formu za registraciju.
+        \item Korisnik popunjava formu za registraciju.
+        \item Sistem vrši validaciju registracije.
         \item Sistem beleži novog korisnika u bazi
-        \item Sistem obaveštava korisnika o uspešnosti registracije
+        \item Sistem obaveštava korisnika o uspešnosti registracije.
     \end{enumerate}
 \end{itemize}
 
 \begin {itemize}
 \item \textbf {Alternativni tokovi}: \\
- 3a: Korisnik nije uneo ispravne podatke za registraciju.\\
- Slučaj upotrebe se nastavlja na koraku 2.
+ 3.1. Korisnik nije uneo ispravne podatke za registraciju.\\
+ Slučaj upotrebe se nastavlja na koraku 2 glavnog toka.
 \end{itemize}
  \begin{itemize} 
     \item \textbf{Dodatne informacije}
@@ -57,16 +57,17 @@
 \end{itemize}
 \begin{itemize}
 \item \textbf {Alternativni tokovi}:\\ 
- 3a: Korisnik nije popunio sva obavezna polja.\\
- Slučaj upotrebe se nastavlja na koraku 2.\\
- 3b: Korisnik je uneo e-mail adresu koja ne odgovara nijednom postojećem nalogu korisnika. \\
- Korisnik dobija odgovarajuću poruku i postavlja mu se pitanje da li želi da se registruje.
+ 3.1. Korisnik nije popunio sva obavezna polja.\\
+ Slučaj upotrebe se nastavlja na koraku 2 glavnog toka.\\
+ 3.2. Korisnik je uneo e-mail adresu koja ne odgovara nijednom postojećem nalogu korisnika. \\
+ Korisnik dobija odgovarajuću poruku i postavlja mu se pitanje da li želi da se registruje. \\
+ Slučaj upotrebe se nastavlja na koraku 2 glavnog toka.
  
-\quad 3b1: Korisnik potvrđuje da želi da se registruje.
-Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restorana".Nakon završetka tog slučaja upotrebe vraća se
-na korak 2. 
+\quad 3.2.1. Korisnik potvrđuje da želi da se registruje.
+Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restorana".Nakon završetka tog slučaja upotrebe, slučaj upotrebe se vraća
+na korak 2 glavnog toka. 
 
-\quad 3b2: Korisnik ne želi da se registruje. Završava se slučaj upotrebe.
+\quad 3.2.2. Korisnik ne želi da se registruje. Završava se slučaj upotrebe.
 \end{itemize}
 
 \begin{itemize} 
@@ -89,19 +90,19 @@ na korak 2.
     Zaposleni ima svoj nalog. 
     \item \textbf{Glavni tok}:
    \begin{enumerate}
-        \item Menadžer odlazi na vebsajt i prijavljuje se unošenjem svog korisničkog imena i šifre
-        \item Menadžer otvara formu za unošenje novog naloga za zaposlene
-        \item Menadžer popunjava formu svim potrebnim podacima
-        \item Menadžer odredjuje prava pristupa nalozima zaposlenih
-        \item Menadžer potvrđuje unete podatke klikom na dugme 'Sačuvaj'
-        \item Sistem beleži novog zaposlenog u bazi
-        \item Sistem obaveštava zaposlenog o uspešnosti registracije slanjem e-mail poruke
+        \item Menadžer odlazi na veb stranicu i prijavljuje se unošenjem svog korisničkog imena i šifre.
+        \item Menadžer otvara formu za unošenje novog naloga za zaposlene.
+        \item Menadžer popunjava formu svim potrebnim podacima.
+        \item Menadžer odredjuje prava pristupa nalozima zaposlenih.
+        \item Menadžer potvrđuje unete podatke klikom na dugme 'Sačuvaj'.
+        \item Sistem beleži novog zaposlenog u bazi.
+        \item Sistem obaveštava zaposlenog o uspešnosti registracije slanjem e-mail poruke.
 \end{enumerate}
 \end{itemize}
 \begin {itemize}
 \item \textbf {Alternativni tokovi}:\\
- 3a: Menadžer nije uneo ispravne podatke za registraciju.\\
- Slučaj upotrebe se nastavlja na koraku 2.
+ 3.1. Menadžer nije uneo ispravne podatke za registraciju.\\
+ Slučaj upotrebe se nastavlja na koraku 2 glavnog toka.
  \end{itemize}
  \begin{itemize} 
      \item \textbf{Dodatne informacije}
@@ -137,7 +138,7 @@ na korak 2.
  \end{itemize}
 \newpage
 \subsection{Upravljanje porudžbinom}
-Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
+Na slici \ref{fig:slika3} je predstavljen dijagram stanja koji opisuje opšti tok upravljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
 
 \begin{figure}[ht]
     \leavevmode
@@ -170,10 +171,10 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
      \end{enumerate}
      \item \textbf{Alternativni tokovi}:
      
-     7a. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine. Tok se nastvalja na koraku 9a.\\
-     9a. Koordinator odbija porudžbinu klikom na dugme "Odbij".Tok se nastvalja na koraku 10.\\
-     7b. Koordinator proverava da li je vrednost parudžbine veća od definisane vrednosti za poklon uz porudžbinu. Tok se nastvalja na koraku 8b.\\
-     8b. Koordinator beleži na cedulju dodatak porudžbini koji korisnik dobija kao poklon. Tok se nastvalja na koraku 9.\\
+     7.1. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine. Slučaj upotrebe se nastavlja na koraku 9.1.\\
+     9.1. Koordinator odbija porudžbinu klikom na dugme "Odbij". Slučaj upotrebe se nastavlja  nastvlja na koraku 10 glavnog toka.\\
+     7.2. Koordinator proverava da li je vrednost parudžbine veća od definisane vrednosti za poklon uz porudžbinu. Slučaj upotrebe se nastavlja na koraku 8.1.\\
+     8.1. Koordinator beleži na cedulju dodatak porudžbini koji korisnik dobija kao poklon. Slučaj upotrebe se nastavlja na koraku 9 glavnog toka.\\
     
 \end{itemize}
 
@@ -187,16 +188,19 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
     \begin{enumerate}
         \item Korisnik vrši poziv restorana.
         \item Korisnik vrši odabir željenih proizvoda.
-        \item Koordinator proverava da li je moguće realizovati porudžbinu.
-        \item Koordinator utvrđuje da svih namirnica potrebnih za datu porudžbinu ima u dovoljnim količinama.
+        \item Koordinator proverava da li je moguće realizovati porudžbinu, odnosno
+        da li ima dovoljno namirnica potrebnih za datu porudžbinu.
         \item Koordinator prihvata porudžbinu i saopštava korisniku.
         \item Korisnik biva obavešten, od strane koordinatora, da je porudžbina prihvaćena.
     \end{enumerate}
     \item \textbf{Alternativni tokovi}:\\
-     2a. Korisnik biva obavešten, od strane telefonskog aparata, da restoran trenutno ne radi.\\
-     4a. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine.\\
-     5a. Koordinator odbija porudžbinu i saopštava korisniku.\\
-     6a. Korisnik biva obavešten, od strane koordinatora, da je porudžbina odbijena.
+     1.1. Korisnik biva obavešten, od strane telefonske sekretarice, da restoran trenutno ne radi. Slučaj upotrebe se ovde završava.\\
+     4.1. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine. Slučaj upotrebe se nastavlja na koraku 5.1.\\
+     5.1. Koordinator odbija porudžbinu i saopštava korisniku. Koordinator korisniku nudi mogućnost da poruči nešto drugo.  
+     
+      \quad 5.1.1. Korisnik želi da poruči nešto drugo. Slučaj upotrebe se nastavlja na koraku 2 glavnog toka. 
+      
+      \quad 5.1.2. Korisnik ne želi da poruči nešto drugo. Slučaj upotrebe se završava. \\
     
      
 \end{itemize}
@@ -241,11 +245,11 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         jelo pripremljeno.
 \end{enumerate}
  \item \textbf{Alternativni tokovi}:\\
-     1a. Kuvar je utvrdio da u kuhinji ne postoje
+     1.1. Kuvar je utvrdio da u kuhinji ne postoje
      sve namirnice koje su neophodne.
      \\ Prelazi se na slučaj
-    upotrebe "3.3.3 Donošenje namirnica koje nedostaju u kuhinji". Nakon završetka tog slučaja upotrebe
-    vraća se na korak 2. 
+    upotrebe "3.3.3 Donošenje namirnica koje nedostaju u kuhinji". Nakon završetka tog slučaja upotrebe, slučaj upotrebe se
+    vraća na korak 2 glavnog toka. 
 \end{itemize}
 
 \subsubsection{Donošenje namirnica koje nedostaju u kuhinji}
@@ -329,7 +333,12 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         \item Dostavljač predaje paket korisniku.
  \end{enumerate}
     \item \textbf{Alternativni tokovi}:\\
-        2a. Dostavljač ne može dobiti korisnika. Čekaće maksimum deset minuta; ukoliko do tada ne stupi u kontakt sa korisnikom, paket se vraća u restoran.
+        2.1. Dostavljač ne može dobiti korisnika. Čekaće maksimum deset minuta; ukoliko do tada ne stupi u kontakt sa korisnikom, paket se vraća u restoran. 
+        
+        \quad 2.1.1. Dostavljač je kontaktirao korisnika. Slučaj upotrebe se nastavlja na koraku 3 glavnog toka.
+        
+        \quad 2.1.2. Dostavljač ni posle deset minuta nije stupio u kontakt sa korisnikom. Slučaj upotrebe se završava.
+        
     \item \textbf{Dodatne informacije}:
      \begin{itemize}
      \item U slučaju da korisnik plaća gotovinom, a dostavljač nema sitan novac za vraćanje kusura, u obavezi je da u najkraćem roku u blizini nađe sitan novac.
@@ -370,7 +379,7 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         \item Zaposleni dobija informaciju da li je njegov zahtev odobren ili ne
     \end{enumerate}
 \item \textbf{Alternativni tokovi}\\
-        3a. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se nastavlja na koraku 3.
+        3.1. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se slučaj upotrebe nastavlja na koraku 3 glavnog toka.
 
  \end{itemize}
  
@@ -386,17 +395,17 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
     \item \textbf{Glavni tok}:
     \begin{enumerate}
         \item Zaposleni se prijavljuje na sistem
-        \item Zaposleni vr\v si odabir odre\dj enih datuma za nepla\'ceni odmor
-        \item Zahtev za nepla\'ceni odmor se evidentira u sistemu
-        \item Sistem obave\v stava menad\v zera da je stigao zahtev za nepla\'ceni odmor slanjem e-mail poruke
-        \item Menad\v zer se prijavljuje na sistem
-        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog
-        \item Sistem prera\v cunava i a\v zurira platu za zaposlenog
+        \item Zaposleni vr\v si odabir odre\dj enih datuma za nepla\'ceni odmor.
+        \item Zahtev za nepla\'ceni odmor se evidentira u sistemu.
+        \item Sistem obave\v stava menad\v zera da je stigao zahtev za nepla\'ceni odmor slanjem e-mail poruke.
+        \item Menad\v zer se prijavljuje na sistem.
+        \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
+        \item Sistem prera\v cunava i a\v zurira platu za zaposlenog.
         \item Sistem obave\v stava zaposlenog da je stigao odgovor na zahtev za nepla\'ceni odmor slanjem e-mail poruke.
-        \item Zaposleni dobija informaciju da li je njegov zahtev odobren ili ne
+        \item Zaposleni dobija informaciju da li je njegov zahtev odobren ili ne.
     \end{enumerate}
 \item \textbf{Alternativni tokovi}\\
-        2a. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se nastavlja na koraku 2.
+        2.1. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se slučaj upotrebe nastavlja na koraku 2 glavnog toka.
 
 \end{itemize}
   
@@ -447,7 +456,7 @@ Na slici \ref{fig:slika3} je predstavljen opšti tok upravljanja porudžbinom. U
         \item Magacioner potvrđuje svoju porudžbinu.
     \end{enumerate}
 \item \textbf{Alternativni tokovi}\\
-        5a. Magacioner otkazuje svoju porudžbinu. Tok se nastavlja\\ na koraku 3.
+        5.1. Magacioner otkazuje svoju porudžbinu. Slučaj upotrebe se nastavlja\\ na koraku 3 glavnog toka.
  
  \item \textbf{Dodatne informacije}
  \begin{itemize}
