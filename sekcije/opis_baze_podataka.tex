@@ -1,0 +1,17 @@
+\newpage
+\section{Opis baze podataka}
+Informacioni sistem  restorana osmišljen je tako da umnogome olakša poslovanje samog restorana, rad zaposlenih u njemu kao i komunikaciju izmedju zaposlenih. Jedan od najbitnijih aspekata ovog informacionog sistema je upravo baza podataka. Pravilno dizajnirana baza podataka pruža njegovim korisnicima pristup ažuriranim, tačnim informacijama. \\
+\indent Baza podataka je projektovana tako da pokriva sve slučajeve upotrebe informacionog sistema. \\
+\indent U bazi postoji apstraktni tip eniteta \textbf{osoba} iz kog su izvedeni tipovi entiteta  \textbf{zaposleni} i \textbf{korisnik} koji opisuju redom skup zaposlenih u restoranu i skup registrovanih korisnika restorana, tim redom. \\
+
+Tabela \textbf{osoba} sadrži zajedničke informacije za zaposlene i korisnike. Polje "id\_osobe" se odnosi na jedinstveno korisničko ime, a "aktivan" označava da li je zaposleni korisnik trenutno aktivan (bit 1) na nalogu restorana ili ne (bit 0). \\
+
+\indent Registracijom korisnika na sajtu restorana dodaje se red u tabeli \textbf{oso\-ba}. Apstraktni entitet \textbf{osoba} se specijalizuje entitetom \textbf{korisnik} i tabela \textbf{korisnik} se popunjava odgovarajućim redom. \\
+
+Slično, kreiranjem naloga za novog radnika se apstraktni entitet \textbf{osoba} specijalizuje entitetom \textbf{zaposleni} i tabela \textbf{zaposleni} se popunjava odgovarajućim redom. Ova tabela povezana je sa tabelom \textbf{uloga} ključem koji ukazuje na odgovarajuću poziciju u sistemu zaposlenih.\\
+
+Deaktivacija naloga otpuštenog radnika vrši se samo promenom bita sa 1 na 0 u polju "aktivan" tabele \textbf{osoba}.\\
+
+Svaki korisnik ima pravo da ostavi utisak o kvalitetu usluge restorana. Ocenjvanje usluge restorana vrši se na osnovu polja "Jeloid\_jela" u tabeli \textbf{ocena}. To je ujedno i strani kluč koji se odnosi na tabelu \textbf{jelo}. Polje "vrednost" ukazuje na ocenu, a komentar nije obavezan. Tabela \textbf{ocena} je povezana stranim ključem "KorisnikOsobaid\_osobe" i sa tabelom \textbf{korisnik}. \\
+
+Prilikom naručivanja (onlajn ili telefonom) dodaje se novi red u tabeli \textbf{porudžbina} pod uslovom da je porudžbina prihvaćena. Tabela je povezana sa tabelom \textbf{korisnik} identifikatorom osobe kao i sa tabelom \textbf{spisak} identifikatorom porudžbine. Da bi se proverila mogućnost realizacije porudžbine, dodaje se najpre novi red u tabeli \textbf{spisak} sa traženim zahtevima. Koordinator proverava preko identifikatora jela i namirnica da li ima dovoljno zaliha trenutno u magacinu. Identifikatori jela i namirnica su povezani tabelom \textbf{priprema}. Napomena: identifikator jela se odnosi kako na hranu, tako i na piće.
