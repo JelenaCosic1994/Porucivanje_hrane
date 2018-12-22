@@ -53,28 +53,27 @@ Na Slici \ref{fig:slika9} predtavljen je dijagram slučajeva upotrebe koji opisu
 \subsubsection{Ocenjivanje usluge restorana}
 \begin{itemize}
     \item \textbf{Kratak opis}:
-    Korisniku je data mogućnost da napiše svoj utisak o usluzi restorana koji je vidljiv drugim korisnicima.
+    Korisniku je data mogućnost da oceni restoran i napiše svoj utisak o usluzi restorana koji je vidljiv drugim korisnicima.
     \item \textbf{Učesnici}:
     Korisnik
     \item \textbf{Preduslovi}:
     Postojanje korisničkog naloga. 
     \item \textbf{Postuslovi}:
-    Korisnik je napisao u komentaru svoj utisak
-    o restoranu.
+    Korisnik je ocenio jelo iz menija restorana i opciono ostavio dodatni komentar.
     \item \textbf{Glavni tok}:
    \begin{enumerate}
         \item Korisnik odlazi na nalog restorana i otvara stranicu Utisci.
-        \item Korisnik popunjava formu za ostavljanje utiska.
-        \item Sistem vrši validaciju utiska.
+        \item Korisnik popunjava formu za ostavljanje ocene.
+        \item Sistem vrši validaciju ocene.
         \item Ažurira se stranica Utisci.
-        \item Sistem obaveštava korisnika da je uspešno postavio komentar.
+        \item Sistem obaveštava korisnika da je uspešno ocenio uslugu restorana.
     \end{enumerate}
 \end{itemize}
 \begin{itemize}
 \item \textbf {Alternativni tokovi}:\\ 
  3.1. Korisnik nije popunio sva obavezna polja.\\
  Slučaj upotrebe se nastavlja na koraku 2 glavnog toka.\\
- 3.2. Korisnik je uneo e-mail adresu koja ne odgovara nijednom postojećem nalogu korisnika. \\
+ 3.2. Korisnik je uneo korisničko ime koje ne odgovara nijednom postojećem nalogu korisnika. \\
  Korisnik dobija odgovarajuću poruku i postavlja mu se pitanje da li želi da se registruje. \\
  Slučaj upotrebe se nastavlja na koraku 2 glavnog toka.
  
@@ -88,8 +87,9 @@ na korak 2 glavnog toka.
 \begin{itemize} 
      \item \textbf{Dodatne informacije}
  \begin{itemize}
-     \item Obavezna polja koja korisnik mora popuniti da bi ostavio utisak su validna e-mail adresa, ime i komentar.
-    \item Sistem validira utisak tako što proverava da li postoji nalog korisnika kome odgovara uneta e-mail adresa.
+     \item Obavezna polja koja korisnik mora popuniti da bi ocenio restoran su jelo koje ocenjuje, ocena od 1 do 5 i korisnicko ime.
+     \item Komentar usluge je opciono polje koje korisnik ne mora obavezno popuniti.
+    \item Sistem validira ocenu tako što proverava da li postoji nalog korisnika kome odgovara uneseno korisničko ime.
  \end{itemize}
  \end{itemize}
  

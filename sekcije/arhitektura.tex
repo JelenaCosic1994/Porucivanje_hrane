@@ -1,0 +1,25 @@
+\newpage
+\section{Arhitektura sistema}
+\subsection{Osnovni prikaz}
+Sledi prikaz karakteristika arhitekture informacionog sistema za poručivanje hrane jednog restorana. Odluke su donošene u skladu sa prirodom i funkcionalnim zahtevima sistema, kao i potrebama korisnika i razvijaoca.Time su određene sledeće karakteristike arhitekture informacionog sistema:
+\begin{enumerate}
+    \item Tip aplikacije: Veb aplikacija
+    \item Strategije isporučivanje: jedan serverski i više klijentskih računara
+    \item Odgovarajuće tehnologije: Java, JavaFX, MYSQL, JS, CSS
+    \item Prateće komponente:
+    \begin{enumerate}
+        \item \textbf{Logovanje na sistem:} Podsistem za autentikaciju korisnika. Sadrži GUI komponentu za učitavanje klijentskih podataka i komponentu za validaciju podataka.
+        \item \textbf{Backup baze:} Predstavlja podsistem za pravljenje kopija baze. Uz to, vodi računa o konzistentnosti kopija, intervalu backup-ovanja i sl.
+        \item \textbf{Pomoć:} Sadrži uputstvo za upotrebu, kontakt i podršku.
+        
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Tip arhitekture}
+Arhitektura sistema je osmišljena kao klijent-server tip arhitekture čiji su entiteti bazirani na tri sloja.
+\begin{enumerate}
+    \item \textbf{Model} sadrži skup klasa koje opisuju sve entitete iz informacionog sistema.
+    \item \textbf{View} odnosno pogled prikazuje podatke iz modela u formatu pogodnom za interakciju kao komponentu korisničkog interfejsa. Za svaki slučaj upotrebe kreiran je jedan view.
+    \item \textbf{Kontroler} obavlja komunikaciju između pogleda i modela, u zavisnosti od koirsnikovog unosa. Sadrži pripremu podataka za pogled, proračune, kao i njihovu pripremu pre slanja na obradu modelu.
+\end{enumerate}
+% Ućo ovde ubaci sliku
