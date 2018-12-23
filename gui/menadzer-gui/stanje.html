@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Menadžer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="menadzer.css" rel="stylesheet">
+
+  </head>
+
+  <body class = "bg">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg nc fixed-top">
+      <div class="container-fluid">
+        <img src="logo.png" class="img-fluid" alt="Responsive image">
+
+        <h3 class="col-lg-3 text-white">Poručivanje hrane</h3>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white">Ime i prezime Menadžera</a>
+            </li>
+			<li class="nav-item">
+			  <a href="zahtevi.html" class="btn btn-primary">Obaveštenja</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light" type="submit">Odjavi se</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	 <!-- tabovi -->
+	<ul class="nav nav-tabs mt-1">
+	<li class="nav-item">
+		<a class="nav-link" href="#">Moj nalog</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="nalozi.html">Nalozi</a>
+	  </li>
+	  <li class="nav-item active">
+		<a class="nav-link" href="zahtevi.html">Zahtevi Zaposlenih</a>
+	  </li>
+	 </ul>
+
+
+	  <div class="tab-pane col-md-8 offset-md-2 mt-5">
+		<form action="/action_page.php">
+			<div class="form-group">
+				<table class="table table-bordered table-info mt-5">
+					  <thead>
+						<tr class = "text-center table-light">
+						  <th scope="col"></th>
+						  <th scope="col">Zaposleni</th>
+						  <th scope="col">Funkcija</th>
+						  <th scope="col">Početak odsustva</th>
+						  <th scope="col">Kraj odsustva</th>
+						</tr>
+					  	<tr class = "text-center table-danger">
+						  <th scope="row"></th>
+						  <td>Srđan Jovanović</td>
+						  <td>Magacioner</td>
+						  <td>31.12.2018.</td>
+						  <td>13.01.2019.</td>
+						</tr>
+						<tr class = "text-center table-info">
+						  <th scope="row"></th>
+						  <td>Marko Marković</td>
+						  <td>Kuvar</td>
+						  <td>31.12.2018.</td>
+						  <td>09.01.2019.</td>
+						</tr>
+						</thead>
+					
+				</table>
+				<div class="col-md-5 offset-md-5 mt-2">
+					<a href="zahtevi.html" class="btn btn-info">Nazad</a>
+				</div>
+			</div>
+			</div>
+  </body>
+</html>

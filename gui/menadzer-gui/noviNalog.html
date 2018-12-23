@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Menadžer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="menadzer.css" rel="stylesheet">
+
+  </head>
+
+  <body class = "bg">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg nc fixed-top">
+      <div class="container-fluid">
+        <img src="logo.png" class="img-fluid" alt="Responsive image">
+
+           <h3 class="col-lg-3 text-white">Poručivanje hrane</h3>
+		   
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white">Ime i prezime Menadžera</a>
+            </li>
+			 <li class="nav-item">
+             <a href="zahtevi.html" class="btn btn-primary">Obaveštenja<span class="badge badge-light">1</span></a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light" type="submit">Odjavi se</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	 <!-- tabovi-->
+
+	 <ul class="nav nav-tabs mt-1">
+	 	  <li class="nav-item">
+		<a class="nav-link" href="#">Moj nalog</a>
+	  </li>
+	  <li class="nav-item active">
+		<a class="nav-link" href="nalozi.html">Nalozi</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="zahtevi.html">Zahtevi Zaposlenih</a>
+	  </li>
+	 </ul>
+
+
+
+
+	 <p style="margin-bottom:2cm;"></p>
+	 
+	 
+	<div class="tab-content text-white">
+    <div class="tab-pane in active">
+		<form action="/action_page.php">
+			  <div class="form-group row">
+				<label for="staticEmail" class="col-sm-2 col-form-label">E-mail:</label>
+				<div class="col-sm-5">
+				  <input type="password" class="form-control" id="inputPassword" placeholder="someone@example.com">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label  class="col-sm-2 col-form-label">Korisničko ime:</label>
+				<div class="col-sm-5">
+				  <input type="password" class="form-control" id="inputPassword" placeholder="Korisnicko ime">
+				</div>
+			  </div>
+			  	<div class="form-group row">
+				<label class="col-sm-2 col-form-label">Lozinka:</label>
+				<div class="col-sm-5">
+				  <input type="password" class="form-control" id="inputPassword" placeholder="Lozinka">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label  class="col-sm-2 col-form-label" placeholder="Ime">Ime:</label>
+				<div class="col-sm-5">
+				  <input type="password" class="form-control" id="inputPassword" placeholder="Ime">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label class="col-sm-2 col-form-label" placeholder="Prezime">Prezime:</label>
+				<div class="col-sm-5">
+				  <input type="password" class="form-control" id="inputPassword"  placeholder="Prezime" >
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label class="col-sm-2 col-form-label">Adresa</label>
+				<div class="col-sm-5">
+				  <input type="password" class="form-control" id="inputPassword" placeholder="Adresa">
+				</div>
+			  </div>
+		
+		  <div class="form-group row">
+				<label for="inputPassword" class="col-sm-2 col-form-label">Funkcija: </label>
+		<div class="col-md-6 offset-md-0 mt-2">	
+		<select>
+		  <option label="Dekorater">Dekorater</option>
+		  <option label="Dostavljac">Dostavljač</option>
+		  <option label="Magacioner">Magacioner</option>
+		  <option label="Koordinator">Koordinator</option>
+		  <option label="Kuvar">Kuvar</option>
+		</select>
+		</div>
+		</div>
+		</div>
+			  
+			  <!--Neophodni podaci za pravljenje naloga zaposlenom su validna e-mail adresa,  ime,  prezime,  adresa,  korisniˇcko ime,  lozinka,  kao iodabir funkcije zaposlenog, ˇciji je nalog u nastanku -->
+	
+			<div class="col-md-6 offset-md-5 mt-2">
+				<button type="button" class="btn btn-success">Prihvati</button>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Odbij</button>
+			</div>
+
+
+
+		 </form>
+
+	</div>
+
+
+  </body>
+
+</html>
