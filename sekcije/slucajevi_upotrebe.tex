@@ -16,10 +16,10 @@ Na Slici \ref{fig:slika9} predtavljen je dijagram slučajeva upotrebe koji opisu
 \end{figure}
 
 
-\subsubsection{Registracija korisnika na sajtu restorana}
+\subsubsection{Registracija korisnika na veb stranici restorana}
 \begin{itemize}
     \item \textbf{Kratak opis}:
-    Korisnik prvi put pristupa nalogu restorana i zato je neophodna registracija kako bi mogao poručiti hranu.
+    Korisnik prvi put pristupa veb stranici restorana i zato je neophodna registracija kako bi mogao poručiti hranu.
     \item \textbf{Učesnici}:
     Korisnik
     \item \textbf{Preduslovi}:
@@ -28,7 +28,7 @@ Na Slici \ref{fig:slika9} predtavljen je dijagram slučajeva upotrebe koji opisu
     Korisnik je registrovan. 
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Korisnik odlazi na nalog restorana i otvara formu za registraciju.
+        \item Korisnik odlazi na veb stranicu restorana i otvara formu za registraciju.
         \item Korisnik popunjava formu za registraciju.
         \item Sistem vrši validaciju registracije.
         \item Sistem beleži novog korisnika u bazi
@@ -62,7 +62,7 @@ Na Slici \ref{fig:slika9} predtavljen je dijagram slučajeva upotrebe koji opisu
     Korisnik je ocenio jelo iz menija restorana i opciono ostavio dodatni komentar.
     \item \textbf{Glavni tok}:
    \begin{enumerate}
-        \item Korisnik odlazi na nalog restorana i otvara stranicu Utisci.
+        \item Korisnik odlazi na svoj nalog i otvara stranicu Utisci.
         \item Korisnik popunjava formu za ostavljanje ocene.
         \item Sistem vrši validaciju ocene.
         \item Ažurira se stranica Utisci.
@@ -78,21 +78,37 @@ Na Slici \ref{fig:slika9} predtavljen je dijagram slučajeva upotrebe koji opisu
  Slučaj upotrebe se nastavlja na koraku 2 glavnog toka.
  
 \quad 3.2.1. Korisnik potvrđuje da želi da se registruje.
-Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restorana".Nakon završetka tog slučaja upotrebe, slučaj upotrebe se vraća
-na korak 2 glavnog toka. 
+Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restorana".Nakon završetka tog slučaja upotrebe, slučaj upotrebe se vraća na korak 2 glavnog toka. 
 
 \quad 3.2.2. Korisnik ne želi da se registruje. Završava se slučaj upotrebe.
 \end{itemize}
 
-\begin{itemize} 
+\begin{itemize}
      \item \textbf{Dodatne informacije}
  \begin{itemize}
-     \item Obavezna polja koja korisnik mora popuniti da bi ocenio restoran su jelo koje ocenjuje, ocena od 1 do 5 i korisnicko ime.
+     \item Obavezna polja koja korisnik mora popuniti da bi ocenio restoran su jelo koje ocenjuje, ocena od 1 do 5 i korisni\v cko ime.
      \item Komentar usluge je opciono polje koje korisnik ne mora obavezno popuniti.
     \item Sistem validira ocenu tako što proverava da li postoji nalog korisnika kome odgovara uneseno korisničko ime.
  \end{itemize}
  \end{itemize}
  
+ \begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/utisci.png}
+    \end{center}
+    \caption{Utisci} % opis ce stajati ispod slike
+    \label{fig:slika_utisci}
+\end{figure}
+
+ \begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/utisci1.png}
+    \end{center}
+    \caption{Dodavanje ocene} % opis ce stajati ispod slike
+    \label{fig:slika_utisci1}
+\end{figure}
  \subsubsection{Kreiranje naloga za radnika upravo zaposlenog u restoranu}
 \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -127,6 +143,15 @@ na korak 2 glavnog toka.
  \end{itemize}
  \end{itemize}
 
+ \begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/nalog.png}
+    \end{center}
+    \caption{Nalog za kuvara, dekoratera i dostavljača} % opis ce stajati ispod slike
+    \label{fig:slika_nalozi}
+\end{figure}
+
  \subsubsection{Deaktivacija naloga otpuštenog radnika}
  \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -151,7 +176,7 @@ na korak 2 glavnog toka.
      \item Pri deaktivaciji naloga, nalog se ne briše, tako da u slučaju ponovnog zaposlenja, dovoljno je da menadžer aktivira postojeći nalog.
  \end{itemize}
  \end{itemize}
-\newpage
+ 
 \subsection{Upravljanje porudžbinom}
 Na slici \ref{fig:slika3} je predstavljen dijagram stanja koji opisuje opšti tok upra\-vljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
 \begin{figure}[ht]
@@ -172,7 +197,7 @@ Na slici \ref{fig:slika3} je predstavljen dijagram stanja koji opisuje opšti to
     \item \textbf{Postuslovi}: Prihvaćena, odnosno odbijena porudžbina.
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Korisnik se prijavljuje na sajt restorana.
+        \item Korisnik se prijavljuje na veb stranici restorana.
         \item Korisnik vrši odabir željenih proizvoda.
         \item Korisnik potvrđuje željenu porudžbinu klikom na dugme "Poruči".
         \item Sistem odbija porudžbinu u slučaju da restoran trenutno ne radi i obaveštava korisnika o tome.
@@ -186,11 +211,29 @@ Na slici \ref{fig:slika3} je predstavljen dijagram stanja koji opisuje opšti to
      \item \textbf{Alternativni tokovi}:
      
      7.1. Koordinator utvrđuje da ne postoji dovoljna količina namirnica za pripremu porudžbine. Slučaj upotrebe se nastavlja na koraku 9.1.\\
-     9.1. Koordinator odbija porudžbinu klikom na dugme "Odbij". Slučaj upotrebe se nastavlja  nastvlja na koraku 10 glavnog toka.\\
+     9.1. Koordinator odbija porudžbinu klikom na dugme "Odbij". Slučaj upotrebe se nastavlja  nastavlja na koraku 10 glavnog toka.\\
      7.2. Koordinator proverava da li je vrednost parudžbine veća od definisane vrednosti za poklon uz porudžbinu. Slučaj upotrebe se nastavlja na koraku 8.1.\\
      8.1. Koordinator beleži na cedulju dodatak porudžbini koji korisnik dobija kao poklon. Slučaj upotrebe se nastavlja na koraku 9 glavnog toka.\\
     
 \end{itemize}
+
+ \begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/narucivanje.png}
+    \end{center}
+    \caption{Onlajn naručivanje} % opis ce stajati ispod slike
+    \label{fig:slika_narucivanje}
+\end{figure}
+
+\begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/narucivanje1.png}
+    \end{center}
+    \caption{Prihvatanje porudžbine} % opis ce stajati ispod slike
+    \label{fig:slika_narucivanje1}
+\end{figure}
 
 \subsubsection{Naručivanje telefonom}
 
@@ -228,6 +271,17 @@ Na slici \ref{fig:slika3} je predstavljen dijagram stanja koji opisuje opšti to
     
     \end{itemize}
     
+\begin{figure}[!h]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/kontakt.png}
+    \end{center}
+    \caption{Naručivanje telefonom} % opis ce stajati ispod slike
+    \label{fig:slika_kontakt}
+\end{figure}
+
+\newpage
+    
 Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje interakcija izmedju korisnika i koordinatora prilikom naručivanja hrane, bilo putem telefona ili onlajn.
 
 \begin{figure}[ht]
@@ -237,6 +291,7 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
     \end{center}
     \caption{Dijagram slučaja upotrebe}
 \end{figure}
+
 
 
 \newpage
@@ -410,6 +465,9 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
     \caption{Dijagram slu\v cajeva upotrebe} % opis ce stajati ispod slike
     \label{fig:slika7}
 \end{figure}
+
+\newpage
+
   \subsubsection{Podno\v senje zahteva za odmor i njegova obrada }
  \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -421,10 +479,10 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
     Zaposlen je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Zaposleni se prijavljuje na sistem
-        \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor
+        \item Zaposleni se prijavljuje na sistem.
+        \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor.
         \item Zahtev za odmor se evidentira u sistemu 
-        \item Sistem obave\v stava menad\v zera da je stigao zahtev za odmor nekog od zaposlenih slanjem obaveštenja
+        \item Sistem obave\v stava menad\v zera da je stigao zahtev za odmor nekog od zaposlenih slanjem obaveštenja.
         % \item Menad\v zer je obave\v sten da je primio zahtev za odmor ili nepla\'ceni odmor (e-mail).
         \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
         \item Na osnovu procene stanja menad\v zer donosi odluku i to se evidentira u sistemu.
@@ -436,6 +494,24 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
         3.1. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se slučaj upotrebe nastavlja na koraku 3 glavnog toka.
 
  \end{itemize}
+ 
+ \begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/odmor.png}
+    \end{center}
+    \caption{Zahtev za odmorom} % opis ce stajati ispod slike
+    \label{fig:slika_odmor}
+\end{figure}
+
+ \begin{figure}[!h]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/odmor1.png}
+    \end{center}
+    \caption{Obrada zahteva} % opis ce stajati ispod slike
+    \label{fig:slika_obrada1}
+\end{figure}
  
  \subsubsection{Podno\v senje zahteva za nepla\'ceni odmor i njegova obrada }
  \begin{itemize}
@@ -461,7 +537,15 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
         2.1. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se slučaj upotrebe nastavlja na koraku 2 glavnog toka.
 
 \end{itemize}
-  
+ 
+  \begin{figure}[ht]
+    \leavevmode
+    \begin{center}
+    \includegraphics[height=0.3\textheight]{slike/neplaceni_odmor.png}
+    \end{center}
+    \caption{Zahtev za neplaćenim odmorom} % opis ce stajati ispod slike
+    \label{fig:slika_neplaceni}
+\end{figure} 
  
  \subsection{Upravljanje namirnicama}
  Upravljanje namirnicama podrazumeva vođenje računa o zalihama hrane i pića u restoranu. Ovo je neophodno da bi bilo koji restoran mogao da funkcioniše. Odnosi se na poručivanje hrane, prijem robe i evidentiranje prispele robe u sistemu. U ovom procesu učestvuju magacioner i dobavljač.
@@ -543,5 +627,4 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
     \end{enumerate}
 
 \end{itemize}
- 
  
