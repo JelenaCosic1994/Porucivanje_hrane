@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Koordinator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="koordinator.css" rel="stylesheet">
+	<!-- ovo je za strelice -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+
+  </head>
+
+  <body class = "bg">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg nc fixed-top">
+      <div class="container-fluid">
+        <img src="logo.png" class="img-fluid" alt="Responsive image">
+
+        <h3 class="col-lg-3 text-white">Poručivanje hrane</h3>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white">Ime i prezime Koordinatora</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light " type="submit">Odjavi se</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+	 <!-- tabovi-->
+	<ul class="nav nav-tabs mt-1">
+	  <li class="nav-item">
+		<a class="nav-link" href="nalog.html">Nalog</a>
+	  </li>
+	  <li class="nav-item">
+		<a  class="nav-link" href="odmor.html">Odmor</a>
+	  </li>
+	  <li class="nav-item active">
+		<a class="nav-link" href="#">Upravljanje porudžbinama<span class="badge badge-success" >1</span></a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="raspolozivost_namirnica.html">Raspoloživost namirnica</a>
+	  </li>
+	</ul>
+
+
+	<!-- PODACI O KORISNIKU -->
+
+	<p style="margin-bottom:1.5cm;"></p>
+	<div class="tab-content text-white">
+		<div class="form-group row">
+			<label class="col-sm-2 col-form-label"for="formGroupExampleInput">Ime i prezime korisnika:</label>
+			<div class="col-sm-5">
+			  <input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Ime i prezime korisnika">
+			</div>
+		</div>
+	</div>
+	<div class="tab-content text-white">
+		<div class="form-group row">
+			<label class="col-sm-2 col-form-label"for="formGroupExampleInput">Adresa:</label>
+			<div class="col-sm-5">
+			  <input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Adresa">
+			</div>
+		</div>
+	</div>
+
+	<!-- PORUDZBINA -->
+	
+	<div class="tab-content text-white">
+    <div class="tab-pane in active">
+		<form action="/action_page.php">
+				
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label"for="formGroupExampleInput">Spisak jela sa porudžbine:</label>
+				<div class="col-sm-5">
+				  <input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Jelo 1">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label"for="formGroupExampleInput"></label>
+				<div class="col-sm-5">
+				  <input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Jelo 2">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label"for="formGroupExampleInput"></label>
+				<div class="col-sm-5">
+				  <input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Jelo 3">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label"for="formGroupExampleInput"></label>
+				<div class="col-sm-5">
+				  <input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Jelo 4">
+				</div>
+			</div>
+			 		
+
+			<!-- DUGMICI -->
+
+			<div class="col-md-8 offset-md-0 mt-8">
+				<button class="btn btn-warning" type="button" href="#"><i class="fas fa-angle-left"></i>  Prethodna</button>
+				<label class="col-sm-8 col-form-label"for="formGroupExampleInput"></label>
+				<button class="btn btn-warning" type="button" href="#">Sledeca  <i class="fas fa-angle-right"></i></button>
+			</div>
+			<div class="col-md-8 offset-md-2 mt-4">
+				<button class="m-auto btn-lg btn-success" type="button" style="width: 200px;" >Prihvati</button>
+				<button type="button"  class="m-auto btn-lg btn-danger" data-dismiss="modal" style="width: 200px;">Odbij</button>
+			</div>
+		</form>
+
+	</div> 
+
+	</div>
+	
+
+  </body>
+
+</html>

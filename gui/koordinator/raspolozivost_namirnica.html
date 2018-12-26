@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Koordinator</title>
+
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<link href="koordinator.css" rel="stylesheet">
+		
+		<!-- neophodno za popup prozor -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body class = "bg">
+	
+		<nav class="navbar navbar-expand-lg nc fixed-top">
+			<div class="container-fluid">
+				<img src="logo.png" class="img-fluid" alt="Responsive image">
+
+				<h3 class="col-lg-3 text-white">Poručivanje hrane</h3>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link text-white">Ime i prezime Koordinatora</a>
+						</li>
+						<li class="nav-item">
+							<button class="btn btn-outline-light" type="submit">Odjavi se</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<ul class="nav nav-tabs mt-1">
+			<li class="nav-item">
+				<a class="nav-link" href="nalog.html">Nalog</a>
+			</li>
+			<li class="nav-item">
+				<a  class="nav-link" href="odmor.html">Odmor</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="upravljanje_porudzbinama.html">Upravljanje porudžbinama  <span class="badge badge-success" >1</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Raspoloživost namirnica</a>
+			</li>
+		</ul>
+
+		<p style="margin-bottom:2cm;"></p>
+		<div class="tab-content text-white" style="margin-left:1cm">	
+			<div class="form-group row">
+				<label class="col-sm-1 col-form-label" for="formGroupExampleInput">Naziv jela:</label>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Naziv jela">
+				</div>
+			</div>
+		</div>
+	
+		<!-- Button trigger modal -->
+		<div class="col-md-8 offset-md-2 mt-3">
+			<button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">
+				Proveri raspoloživost potrebnih namirnica
+			</button>
+		</div>
+	
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h4 class="modal-title">Raspoloživost namirnica</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					
+					<div class="modal-body">
+						Nisu na raspolaganju sve neophodne namirnice za pripremu jela: Naziv jela !
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Zatvori</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
