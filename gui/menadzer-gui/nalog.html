@@ -32,9 +32,6 @@
             <li class="nav-item active">
               <a class="nav-link text-white">Ime i prezime Menadžera</a>
             </li>
-			 <li class="nav-item">
-             <a href="zahtevi.html" class="btn btn-primary">Obaveštenja<span class="badge badge-light">1</span></a>
-            </li>
             <li class="nav-item">
               <button class="btn btn-outline-light" type="submit">Odjavi se</button>
             </li>
@@ -47,13 +44,13 @@
 
 	 <ul class="nav nav-tabs mt-1">
 	 	  <li class="nav-item">
-		<a class="nav-link" href="#">Moj nalog</a>
+		<a class="nav-link" href="mojNalog.html">Nalog</a>
 	  </li>
 	  <li class="nav-item active">
 		<a class="nav-link" href="nalozi.html">Nalozi</a>
 	  </li>
-	  <li class="nav-item">
-		<a class="nav-link" href="zahtevi.html">Zahtevi Zaposlenih</a>
+	  <li class="nav-item"> 
+		<a class="nav-link" href="zahtevi.html">Zahtevi Zaposlenih <span class="badge badge-success">1</span></a>
 	  </li>
 	 </ul>
 
@@ -62,14 +59,14 @@
 	 <div class="col-md-6 offset-md-0 mt-4">
 	 
 	<button type="button" class="btn btn-info" id = "izmeniBtn" onclick =  "hideReadonly()">Izmeni</button>
-	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="myFunction()" >Izbriši</button>
+	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="myFunction()" >Deaktiviraj</button>
 	 </div>
 	 
 
 	<script>
 	function myFunction() {
 	  var txt;
-	  if (confirm("Da li ste sigurni da zelite izbrisati nalog zaposlenog?")) {
+	  if (confirm("Da li ste sigurni da želite deaktivirati nalog zaposlenog?")) {
 		txt = "Nalog ce biti izbrisan!";
 	  } else {
 		
@@ -81,8 +78,6 @@
             }
 			
 	</script>
-	 
-	  <p style="margin-bottom:1cm;"></p>
 	 
 	<div class="tab-pane col-md-8 offset-md-0 mt-5 text-white">
 		<form action="/action_page.php">
@@ -122,11 +117,23 @@
 				<input  class="form-control" type="text" value="Bulevar Kralja Aleksandra 25, Beograd" readonly="readonly">
 				</div>
 			  </div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label">Datum rodjenja:</label>
+				<div class="col-sm-5">
+				  <input type = "datetime" class="form-control" value = "25/09/1990" readonly = "readonly">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label class="col-sm-2 col-form-label">Broj telefona</label>
+				<div class="col-sm-5">
+				  <input class="form-control" value = "061/123-45-67" readonly = "readonly">
+				</div>
+			  </div>
 		
 		  <div class="form-group row">
 				<label class="col-sm-2 col-form-label">Funkcija:</label>
 				<div class="col-sm-5">
-				<input class="form-control" type="text" value="Koordinator" readonly="readonly">
+				<input class="form-control" type="text" value="Menadžer" readonly="readonly">
 				</div>
 			  </div>
 		</div>

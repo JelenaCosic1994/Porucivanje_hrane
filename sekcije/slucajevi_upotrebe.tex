@@ -116,7 +116,7 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
  \subsubsection{Kreiranje naloga za radnika upravo zaposlenog u restoranu}
  
  \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/nalog.png}
+    \includegraphics[width=1\textwidth]{slike/menadzer_noviNalog.PNG}
     \caption{Nalog za kuvara, dekoratera i dostavljača} % opis ce stajati ispod slike
     \label{fig:slika_nalozi}
 \end{figure}
@@ -153,8 +153,19 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
  \end{itemize}
  \end{itemize}
 
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/menadzer_nalozi.PNG}
+    \caption{Nalozi zaposlenih} % opis ce stajati ispod slike
+    \label{fig:slika_nalozi}
+\end{figure}
 
  \subsubsection{Deaktivacija naloga otpuštenog radnika}
+ 
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/menadzer_deaktiviranje.PNG}
+    \caption{Deaktiviranje naloga otpuštenog radnika} % opis ce stajati ispod slike
+    \label{fig:slika_deaktiviranje}
+\end{figure}
  \begin{itemize}
     \item \textbf{Kratak opis}:
    Radniku koji je otpušten menadžer deaktivira nalog kako više ne bi imao pristup sistemu.
@@ -169,7 +180,7 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
         \item Menadžer odlazi na veb stranicu i prijavljuje se unošenjem svog korisničkog imena i šifre.
         \item Menadžer pronalazi nalog bivšeg zaposlenog.
         \item Menadžer deaktivira nalog klikom na dugme 'Deaktiviraj'.
-        \item Menadžer potvrđuje unete promene klikom na dugme 'Sačuvaj'.
+        \item Menadžer potvrđuje unete promene klikom na  'OK' u iskačućoj poruci.
         \item Sistem beleži promene u bazi.
         \item Sistem obaveštava radnika o deaktivaciji naloga slanjem e-mail poruke.
     \end{enumerate}
@@ -512,7 +523,18 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
         2.1. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se slučaj upotrebe nastavlja na koraku 2 glavnog toka.
 
 \end{itemize}
- 
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/menadzer_zahteviZaOdmorom.PNG}
+    \caption{Zahtevi za  odmorom} % opis ce stajati ispod slike
+    \label{fig:slika_odmor}
+\end{figure}
+\vspace{5cm}
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/menadzer_proveraStanja.PNG}
+    \caption{Provera rasporeda odmora radnika} % opis ce stajati ispod slike
+    \label{fig:slika_raspored}
+\end{figure}
+
  \subsection{Upravljanje namirnicama}
  Upravljanje namirnicama podrazumeva vođenje računa o zalihama hrane i pića u restoranu. Ovo je neophodno da bi bilo koji restoran mogao da funkcioniše. Odnosi se na poručivanje hrane, prijem robe i evidentiranje prispele robe u sistemu. U ovom procesu učestvuju magacioner i dobavljač.
  Na Slici \ref{fig:slika5} predstavljen je dijagram slučajeva upotrebe za upravljanje namirnicama.
@@ -535,7 +557,7 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
 % \end{center}
 
  \subsubsection{Naručivanje nedostajućih namirnica}
- \begin{itemize}
+   \begin{itemize}
     \item \textbf{Kratak opis}:
    Magacioner od dobavljača naručuje namirnice koje nedostaju u magacinu.
     \item \textbf{Učesnici}:
@@ -555,6 +577,7 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
 \item \textbf{Alternativni tokovi}\\
         5.1. Magacioner otkazuje svoju porudžbinu. Slučaj upotrebe se na\-stavlja na koraku 3 glavnog toka.
  
+
  \item \textbf{Dodatne informacije}
  \begin{itemize}
      \item 
