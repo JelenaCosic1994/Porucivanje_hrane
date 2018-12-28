@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Magacioner</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="magacioner.css" rel="stylesheet">
+
+  </head>
+
+  <body class = "bg">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg nc fixed-top">
+      <div class="container-fluid">
+        <img src="logo.png" class="img-fluid" alt="Responsive image">
+
+        <h3 class="col-lg-3 text-white">Poručivanje hrane</h3>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white">Ime i prezime Magacionera</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light" type="submit">Odjavi se</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+ <!-- tabovi -->
+	<ul class="nav nav-tabs">
+	<li class="nav-item">
+		<a class="nav-link" href="mojNalog.html">Nalog</a>
+	  </li>
+	  <li class="nav-item active">
+		<a class="nav-link" href="stanjeMagacina.html">Stanje magacina</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="narucene.html">Naručene namirnice</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="odmor.html">Odmor</a>
+	  </li>
+	 </ul>
+	 
+	 
+	  <div class="tab-pane col-md-7 offset-md-0 mt-3">
+		<form action="/action_page.php">
+			<div class="form-group">
+				<table class="table table-bordered table-light mt-4">
+					  <thead>
+						<tr class = "text-center">
+						  <th scope="col">Namirnica</th>
+						  <th scope="col">Količina</th>
+						  <th scope="col">Broj pakovanja</th>
+						</tr>
+							
+						<!-- . Kolona "količina" čuva podatak o količini  jednog pakovanja dotične namirnice, a kolona "merna\_jedinica"
+u skladu s tim, kojom mernom jedinicom se mere pakovanja. Kolona "kvantitet" prikazuje brojno stanje pakovanja te namirnice.
+Kada polje "kvantitet" ima vrednost manju od polja "minimum" u tabeli -->
+
+						<tr class = "text-center">
+						  <td>Brašno</td>
+						  <td>1/kg</td>
+						  <td contenteditable="true">10</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Kačkavalj</td>
+						  <td>1/kg</td>
+						  <td contenteditable="true">8</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Kečap</td>
+						  <td>500/g</td>
+						  <td contenteditable="true">5</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Masline</td>
+						  <td>200/g</td>
+						  <td contenteditable="true">4</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Pavlaka</td>
+						  <td>180/g</td>
+						  <td contenteditable="true">14</td>
+						</tr> 
+					  	<tr class = "text-center">
+						  <td>Pileće belo meso</td>
+						  <td>1/kg</td>
+						  <td contenteditable="true">5</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Suncokretovo ulje</td>
+						  <td>1/l</td>
+						  <td contenteditable="true">8</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Šunka</td>
+						  <td>1/kg</td>
+						  <td contenteditable="true">10</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Ulje</td>
+						  <td>1/l</td>
+						  <td contenteditable="true">8</td>
+						</tr>
+						<tr class = "text-center">
+						  <td>Vegeta</td>
+						  <td>200/g</td>
+						  <td contenteditable="true">3</td>
+						</tr>
+						</thead>
+					
+				</table>
+			</div>
+	</div>
+
+	 <div class="col-md-8 offset-md-4 mt-3">
+		<a href="#" class="btn btn-info">Sačuvaj</a>
+	</div>
+
+		<div class="form-popup" id="myForm">
+		  <form action="/action_page.php" class="form-container">
+			<h1>Spisak</h1>
+
+			<label><b>Namirnica</b></label>
+			<input type="text" placeholder = "Namirnica1" readonly = "true"  name="naziv" required>
+
+			<label><b>Količina</b></label>
+			<input placeholder="1" name="psw" required>
+
+			<button type="submit" class="btn">Sačuvaj</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">Otkaži</button>
+		  </form>
+		</div>
+
+		<script>
+		
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
+		}
+		</script>
+			
+
+  </body>
+
+</html>

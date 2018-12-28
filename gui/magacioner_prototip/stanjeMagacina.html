@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+		<script src="skript1.js"></script>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Magacioner</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="magacioner.css" rel="stylesheet">
+
+  </head>
+
+  <body class = "bg" onload="write(0)">
+  
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg nc fixed-top">
+      <div class="container-fluid">
+        <img src="logo.png" class="img-fluid" alt="Responsive image">
+
+        <h3 class="col-lg-3 text-white">Poručivanje hrane</h3>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white">Ime i prezime Magacionera</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light" type="submit">Odjavi se</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	 <!-- tabovi -->
+	<ul class="nav nav-tabs">
+	<li class="nav-item">
+		<a class="nav-link" href="mojNalog.html">Nalog</a>
+	  </li>
+	  <li class="nav-item active">
+		<a class="nav-link" href="#">Stanje magacina</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="narucene.html">Naručene namirnice</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="odmor.html">Odmor</a>
+	  </li>
+	 </ul>
+
+
+
+	<div class="tab-pane col-md-8 offset-md-0 mt-5 text-black">
+	<!--tabela sa namirnicama-->
+		<div class="form-group">
+			<table class="table table-bordered table-light mt-5" id="id">	
+			</table>
+		</div>
+	</div>
+	
+
+	<div class="form-popup" id="myForm">
+	  <form action="/action_page.php" class="form-container">
+
+		<label><b>Namirnica: </b></label>
+		<input type="text" id="desired_ing" readonly = "true"  name="naziv" required>
+
+		<label><b>Broj pakovanja: </b></label>
+		<input id="desired_amo" placeholder="1" name="psw" required>
+		<p style="margin-bottom:0.5cm;"></p>
+		<button type="button" class="btn" onclick="order()">Unesi</button>
+		<button type="button" class="btn cancel" onclick="closeForm()">Otkaži</button>
+	  </form>
+	</div>
+	
+	
+	<div class="form-popup" id="myForm1">
+	  <form action="/action_page.php" class="form-container">
+
+		<label><b>Namirnica: </b></label>
+		<input type="text" id="delivered_ing" readonly = "true"  name="naziv" required>
+
+		<label><b>Broj pakovanja: </b></label>
+		<input id="delivered_amo" placeholder="1" name="psw" required>
+		<p style="margin-bottom:0.5cm;"></p>
+		<button type="button" class="btn" onclick="deliver()">Unesi</button>
+		<button type="button" class="btn cancel" onclick="closeForm1()">Otkaži</button>
+	  </form>
+	</div>
+	
+
+			
+
+  </body>
+
+
+</html>
