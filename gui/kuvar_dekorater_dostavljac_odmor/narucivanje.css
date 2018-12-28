@@ -1,0 +1,151 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.glavni{
+	padding-top: 50px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0%;
+}
+
+.bg {
+    background-image: url("bg1.png");
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-tabs > li.active > a {
+  color: black;
+  font-size: 16px;
+  background-color: orange ;
+}
+
+.nav-tabs > li > a {
+  color: white;
+}
+
+.nc{
+	background-color: green;
+}
+
+.nc1{
+	background-color: #ffc107;
+	font-size: 24px;
+	width: 16em;
+	border: none;
+	padding: 20px;
+	text-decoration: none;
+	display: inline-block;
+    margin: 4px 2px;
+	border-radius: 12px;
+	position: absolute;
+	left: 50px;
+	top: 150px;
+}
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}
+
+.label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}​
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.a {
+  color: white;
+  font-size: 24px;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+.center{
+  width: 30px;
+  margin: 10px auto;
+  
+}
