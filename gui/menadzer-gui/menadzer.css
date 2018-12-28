@@ -18,7 +18,7 @@ body, html {
 }
 
 .bg {
-    background-image: url("bg1.jpg");
+    background-image: url("bg3.png");
 
     height: 100%;
 
@@ -32,11 +32,6 @@ body, html {
   font-size: 16px;
   background-color: orange ;
 }
-
-
-
-
-
 
 
 
