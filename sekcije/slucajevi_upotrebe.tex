@@ -11,21 +11,7 @@ Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opis
 \end{figure}
 
 \subsubsection{Registracija korisnika na veb stranici restorana}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/prijava_dijalog.png}
-    \caption{Prijava}
-    \label{fig:prijava}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/registracija.png}
-    \caption{Registracija}
-    \label{fig:reg1}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/uspesna_registracija.png}
-    \caption{Uspe\v sna registracija}
-    \label{fig:reg2}
-\end{figure}
+
 \begin{itemize}
     \item \textbf{Kratak opis}:
     Korisnik prvi put pristupa veb stranici restorana i zato je neophodna registracija kako bi mogao poručiti hranu.
@@ -45,6 +31,8 @@ Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opis
     \end{enumerate}
 \end{itemize}
 
+
+
 \begin {itemize}
 \item \textbf {Alternativni tokovi}: \\
  3.1. Korisnik nije uneo ispravne podatke za registraciju.\\
@@ -59,6 +47,28 @@ Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opis
 \end{itemize}
 
 
+ \begin{figure}[!h]
+    \centering
+    \includegraphics[width=1\textwidth]{slike/prijava_dijalog.png}
+    \caption{Prijava}
+    \label{fig:prijava}
+\end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[height=0.235\textheight]{slike/registracija.png}
+    \caption{Registracija}
+    \label{fig:reg1}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+    \includegraphics[width=1\textwidth]{slike/uspesna_registracija.png}
+    \caption{Uspe\v sna registracija}
+    \label{fig:reg2}
+\end{figure}
+
+
+\newpage
 \subsubsection{Ocenjivanje usluge restorana}
 \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -199,38 +209,31 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
     \caption{Deaktiviranje naloga otpuštenog radnika} % opis ce stajati ispod slike
     \label{fig:slika_deaktiviranje}
 \end{figure}
- \newpage
+
+
 \subsection{Upravljanje porudžbinom}
-Na slici \ref{fig:slika4} je predstavljen dijagram stanja koji opisuje opšti tok upra\-vljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
+
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/Upravljanje_porudzbinomUC.png}
+    \caption{Dijagram slučajeva upotrebe} % opis ce stajati ispod slike
+    \label{fig:slika_deaktiviranje}
+\end{figure}
+
+
+
+ \newpage
+
+Na slici \ref{fig:slika14} je predstavljen dijagram stanja koji opisuje opšti tok upra\-vljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
 \begin{figure}[!h]
     \leavevmode
     \begin{center}
     \includegraphics[height=0.6\textheight]{slike/Upravljanje_porudzbinom.png}
     \end{center}
     \caption{Dijagram stanja} % opis ce stajati ispod slike
-    \label{fig:slika4}
+    \label{fig:slika14}
 \end{figure}
 \subsubsection{Onlajn naručivanje}
- \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/narucivanje.png}
-    \caption{Onlajn naručivanje} % opis ce stajati ispod slike
-    \label{fig:slika_narucivanje}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/narucivanje1.png}
-    \caption{Poslata porudžbina} % opis ce stajati ispod slike
-    \label{fig:slika_narucivanje1}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/upravljanje_porudzbinama.png}
-    \caption{Obrada porudžbina} % opis ce stajati ispod slike
-    \label{fig:slika_obrada_porudzbina}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/porudzbina.png}
-    \caption{Obaveštavanje korisnika o statusu porudžbine} % opis ce stajati ispod slike
-    \label{fig:slika_obrada_porudzbina}
-\end{figure}
+
 \begin{itemize}
     \item \textbf{Kratak opis}: Korisnik naručuje željenu hranu putem veb stranice. Porudžbina biva prihvaćena ili odbijena od strane koordinatora.
     \item \textbf{Učesnici}: Korisnik, koordinator.
@@ -258,27 +261,30 @@ Na slici \ref{fig:slika4} je predstavljen dijagram stanja koji opisuje opšti to
     
 \end{itemize}
 
+ \begin{figure}[!h]
+    \includegraphics[ width=1\textwidth]{slike/narucivanje.png}
+    \caption{Onlajn naručivanje} % opis ce stajati ispod slike
+    \label{fig:slika_narucivanje}
+\end{figure}
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/narucivanje1.png}
+    \caption{Poslata porudžbina} % opis ce stajati ispod slike
+    \label{fig:slika_narucivanje1}
+\end{figure}
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/upravljanje_porudzbinama.png}
+    \caption{Obrada porudžbina} % opis ce stajati ispod slike
+    \label{fig:slika_obrada_porudzbina}
+\end{figure}
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/porudzbina.png}
+    \caption{Obaveštavanje korisnika o statusu porudžbine} % opis ce stajati ispod slike
+    \label{fig:slika_obrada_porudzbina}
+\end{figure}
+
+\newpage
 \subsubsection{Naručivanje telefonom}
 
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/DijagramSekvenci.png}\\
-    \caption{Dijagram slučajeva upotrebe}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/kontakt.png}
-    \caption{Naručivanje telefonom} % opis ce stajati ispod slike
-    \label{fig:slika_kontakt}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/raspolozivost_namirnica.png}
-    \caption{Raspolo\v zivost namirnica} % opis ce stajati ispod slike
-    \label{fig:slika_kontakt}
-\end{figure}
-\begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/nedovoljno_namirnica.png}
-    \caption{Nema potrebnih namirnica} % opis ce stajati ispod slike
-    \label{fig:slika_kontakt}
-\end{figure}
 \begin{itemize}
     \item \textbf{Kratak opis}: Korisnik naručuje željenu hranu pozivom na telefon restorana. Porudžbina biva prihvaćena ili odbijena od strane koordinatora.
     \item \textbf{Učesnici}: Korisnik, koordinator.
@@ -303,12 +309,30 @@ Na slici \ref{fig:slika4} je predstavljen dijagram stanja koji opisuje opšti to
       \quad 5.1.2. Korisnik ne želi da poruči nešto drugo. Slučaj upotrebe se završava. \\
     
     \end{itemize}
-Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje interakcija izmedju korisnika i koordinatora prilikom naručivanja hrane, bilo putem telefona ili onlajn.
+Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izmedju korisnika i koordinatora prilikom naručivanja hrane, bilo putem telefona ili onlajn.
 
 \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/Upravljanje_porudzbinomUC.png}
-    \caption{Dijagram slučaja upotrebe}
+    \includegraphics[width=1\textwidth]{slike/DijagramSekvenci.png}\\
+    \caption{Dijagram sekvenci}
 \end{figure}
+\newpage
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/kontakt.png}
+    \caption{Naručivanje telefonom} % opis ce stajati ispod slike
+    \label{fig:slika_kontakt}
+\end{figure}
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/raspolozivost_namirnica.png}
+    \caption{Raspolo\v zivost namirnica} % opis ce stajati ispod slike
+    \label{fig:slika_kontakt}
+\end{figure}
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/nedovoljno_namirnica.png}
+    \caption{Nema potrebnih namirnica} % opis ce stajati ispod slike
+    \label{fig:slika_kontakt}
+\end{figure}
+
+\newpage
 
 \subsection{Realizacija zahteva}
 \begin{figure}[!h]
@@ -321,6 +345,7 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
     \caption{Dijagram aktivnosti} % opis ce stajati ispod slike
     \label{fig:slika6}
 \end{figure}
+\newpage
 \subsubsection{Prosleđivanje porudžbine od koordinatora ka kuvaru}
 \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -471,22 +496,7 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
 \end{figure}
 
   \subsubsection{Podno\v senje zahteva za odmor i njegova obrada }
-   \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/odmor.png}
-    \caption{Zahtev za odmorom} % opis ce stajati ispod slike
-    \label{fig:slika_odmor}
-\end{figure}
- \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/odmor1.png}
-    \caption{Obrada zahteva} % opis ce stajati ispod slike
-    \label{fig:slika_obrada1}
-\end{figure}
-
- \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/odmor2.png}
-    \caption{Provera zahteva nakon obaveštenja} % opis ce stajati ispod slike
-    \label{fig:slika_obrada2}
-\end{figure}
+   
   
  \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -514,12 +524,28 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
 
  \end{itemize}
  
+ 
+ 
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/odmor.png}
+    \caption{Zahtev za odmorom} % opis ce stajati ispod slike
+    \label{fig:slika_odmor}
+\end{figure}
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/odmor1.png}
+    \caption{Obrada zahteva} % opis ce stajati ispod slike
+    \label{fig:slika_obrada1}
+\end{figure}
+
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/odmor2.png}
+    \caption{Provera zahteva nakon obaveštenja} % opis ce stajati ispod slike
+    \label{fig:slika_obrada2}
+\end{figure}
+ 
+\newpage
  \subsubsection{Podno\v senje zahteva za nepla\'ceni odmor i njegova obrada }
-  \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/neplaceni_odmor.png}
-    \caption{Zahtev za neplaćenim odmorom} % opis ce stajati ispod slike
-    \label{fig:slika_neplaceni}
-\end{figure} 
+ 
  
  \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -544,6 +570,16 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
         2.1. Uneti datumi nisu validni, sistem prosleđuje poruku za ponovno unošenje datuma, nakon čega se slučaj upotrebe nastavlja na koraku 2 glavnog toka.
 
 \end{itemize}
+
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/neplaceni_odmor.png}
+    \caption{Zahtev za neplaćenim odmorom} % opis ce stajati ispod slike
+    \label{fig:slika_neplaceni}
+\end{figure} 
+
+
+
+
  \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/menadzer_zahteviZaOdmorom1.PNG}
     \caption{Zahtevi za  odmorom} % opis ce stajati ispod slike
