@@ -11,7 +11,6 @@ Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opis
 \end{figure}
 
 \subsubsection{Registracija korisnika na veb stranici restorana}
-
 \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/prijava_dijalog.png}
     \caption{Prijava}
@@ -27,7 +26,6 @@ Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opis
     \caption{Uspe\v sna registracija}
     \label{fig:reg2}
 \end{figure}
-
 \begin{itemize}
     \item \textbf{Kratak opis}:
     Korisnik prvi put pristupa veb stranici restorana i zato je neophodna registracija kako bi mogao poručiti hranu.
@@ -59,19 +57,9 @@ Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opis
         \item Sistem validira novog korisnika tako što proverava da li već postoji nalog sa unetom e-mail adresom. Neophodno je i da korisničko ime bude jedinstveno.
     \end{itemize}
 \end{itemize}
+
+
 \subsubsection{Ocenjivanje usluge restorana}
- \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/utisci.png}
-    \caption{Utisci} % opis ce stajati ispod slike
-    \label{fig:slika_utisci}
-\end{figure}
-
- \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/utisci1.png}
-
-    \caption{Dodavanje ocene} % opis ce stajati ispod slike
-    \label{fig:slika_utisci1}
-\end{figure}
 \begin{itemize}
     \item \textbf{Kratak opis}:
     Korisniku je data mogućnost da oceni restoran i napiše svoj utisak o usluzi restorana koji je vidljiv drugim korisnicima.
@@ -112,14 +100,21 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
     \item Sistem validira ocenu tako što proverava da li postoji nalog korisnika kome odgovara uneseno korisničko ime.
  \end{itemize}
  \end{itemize}
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/utisci.png}
+    \caption{Utisci} % opis ce stajati ispod slike
+    \label{fig:slika_utisci}
+\end{figure}
+
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/utisci1.png}
+
+    \caption{Dodavanje ocene} % opis ce stajati ispod slike
+    \label{fig:slika_utisci1}
+\end{figure}
 
  \subsubsection{Kreiranje naloga za radnika upravo zaposlenog u restoranu}
  
- \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/menadzer_noviNalog.PNG}
-    \caption{Nalog za kuvara, dekoratera i dostavljača} % opis ce stajati ispod slike
-    \label{fig:slika_nalozi}
-\end{figure}
 \begin{itemize}
     \item \textbf{Kratak opis}:
    Radniku koji je upravo zaposlen u restoranu potrebno je napraviti nalog kako bi imao pristup sistemu.
@@ -159,13 +154,21 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
     \label{fig:slika_nalozi}
 \end{figure}
 
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/menadzer_noviNalog.PNG}
+    \caption{Kreiranje naloga zaposlenog} % opis ce stajati ispod slike
+    \label{fig:slika_nalozi}
+\end{figure}
+
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/menadzer_nalog.PNG}
+    \caption{Nalog zaposlenog} % opis ce stajati ispod slike
+    \label{fig:slika_nalog}
+\end{figure}
+
+\newpage
  \subsubsection{Deaktivacija naloga otpuštenog radnika}
  
- \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/menadzer_deaktiviranje.PNG}
-    \caption{Deaktiviranje naloga otpuštenog radnika} % opis ce stajati ispod slike
-    \label{fig:slika_deaktiviranje}
-\end{figure}
  \begin{itemize}
     \item \textbf{Kratak opis}:
    Radniku koji je otpušten menadžer deaktivira nalog kako više ne bi imao pristup sistemu.
@@ -180,7 +183,7 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
         \item Menadžer odlazi na veb stranicu i prijavljuje se unošenjem svog korisničkog imena i šifre.
         \item Menadžer pronalazi nalog bivšeg zaposlenog.
         \item Menadžer deaktivira nalog klikom na dugme 'Deaktiviraj'.
-        \item Menadžer potvrđuje unete promene klikom na  'OK' u iskačućoj poruci.
+        \item Menadžer potvrđuje unete promene klikom na  'Da' u iskačućoj poruci.
         \item Sistem beleži promene u bazi.
         \item Sistem obaveštava radnika o deaktivaciji naloga slanjem e-mail poruke.
     \end{enumerate}
@@ -189,6 +192,13 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
      \item Pri deaktivaciji naloga, nalog se ne briše, tako da u slučaju ponovnog zaposlenja, dovoljno je da menadžer aktivira postojeći nalog.
  \end{itemize}
  \end{itemize}
+ 
+ 
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/menadzer_deaktiviranje.PNG}
+    \caption{Deaktiviranje naloga otpuštenog radnika} % opis ce stajati ispod slike
+    \label{fig:slika_deaktiviranje}
+\end{figure}
  \newpage
 \subsection{Upravljanje porudžbinom}
 Na slici \ref{fig:slika4} je predstavljen dijagram stanja koji opisuje opšti tok upra\-vljanja porudžbinom. U zavisnosti od toga da li među zalihama ima dovoljno namirnica, porudžbina se prihvata ili odbija.
@@ -214,6 +224,11 @@ Na slici \ref{fig:slika4} je predstavljen dijagram stanja koji opisuje opšti to
 \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/upravljanje_porudzbinama.png}
     \caption{Obrada porudžbina} % opis ce stajati ispod slike
+    \label{fig:slika_obrada_porudzbina}
+\end{figure}
+\begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/porudzbina.png}
+    \caption{Obaveštavanje korisnika o statusu porudžbine} % opis ce stajati ispod slike
     \label{fig:slika_obrada_porudzbina}
 \end{figure}
 \begin{itemize}
@@ -466,6 +481,12 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
     \caption{Obrada zahteva} % opis ce stajati ispod slike
     \label{fig:slika_obrada1}
 \end{figure}
+
+ \begin{figure}[!h]
+    \includegraphics[width=1\textwidth]{slike/odmor2.png}
+    \caption{Provera zahteva nakon obaveštenja} % opis ce stajati ispod slike
+    \label{fig:slika_obrada2}
+\end{figure}
   
  \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -524,17 +545,17 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
 
 \end{itemize}
  \begin{figure}[!h]
-    \includegraphics[width=1\textwidth]{slike/menadzer_zahteviZaOdmorom.PNG}
+    \includegraphics[width=1\textwidth]{slike/menadzer_zahteviZaOdmorom1.PNG}
     \caption{Zahtevi za  odmorom} % opis ce stajati ispod slike
     \label{fig:slika_odmor}
 \end{figure}
 \vspace{5cm}
 \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/menadzer_proveraStanja.PNG}
-    \caption{Provera rasporeda odmora radnika} % opis ce stajati ispod slike
+    \caption{Provera rasporeda odsustva radnika} % opis ce stajati ispod slike
     \label{fig:slika_raspored}
 \end{figure}
-
+\newpage
  \subsection{Upravljanje namirnicama}
  Upravljanje namirnicama podrazumeva vođenje računa o zalihama hrane i pića u restoranu. Ovo je neophodno da bi bilo koji restoran mogao da funkcioniše. Odnosi se na poručivanje hrane, prijem robe i evidentiranje prispele robe u sistemu. U ovom procesu učestvuju magacioner i dobavljač.
  Na Slici \ref{fig:slika5} predstavljen je dijagram slučajeva upotrebe za upravljanje namirnicama.
@@ -577,7 +598,6 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
 \item \textbf{Alternativni tokovi}\\
         5.1. Magacioner otkazuje svoju porudžbinu. Slučaj upotrebe se na\-stavlja na koraku 3 glavnog toka.
  
-
  \item \textbf{Dodatne informacije}
  \begin{itemize}
      \item 
@@ -586,6 +606,27 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
  \end{itemize}
  \end{itemize}
  
+ 
+
+ \begin{figure}[!h]
+    \leavevmode
+    \begin{center}
+    \includegraphics[width=1\textwidth]{slike/magacioner_stanjeMagacina.PNG}
+    \end{center}
+    \caption{Stanje magacina} % opis ce stajati ispod slike
+    \label{fig:slika8}
+\end{figure}
+
+ \begin{figure}[!h]
+    \leavevmode
+    \begin{center}
+    \includegraphics[width=1\textwidth]{slike/magacioner_Narucivanje.PNG}
+    \end{center}
+    \caption{Naručivanje namirnice} % opis ce stajati ispod slike
+    \label{fig:slika8}
+\end{figure}
+ 
+ \newpage
   \subsubsection{Prijem prispelih namirnica i njihovo evidentiranje u sistemu}
  \begin{itemize}
     \item \textbf{Kratak opis}:
@@ -610,5 +651,14 @@ Na narednoj slici nalazi se dijagram slučaja upotrebe kojim se prikazuje intera
     \end{enumerate}
 
 \end{itemize}
+
+ \begin{figure}[!h]
+    \leavevmode
+    \begin{center}
+    \includegraphics[width=1\textwidth]{slike/magacioner_vecNarucene.PNG}
+    \end{center}
+    \caption{Spisak naručenih namirnica} % opis ce stajati ispod slike
+    \label{fig:slika_narucene}
+\end{figure}
  
  
