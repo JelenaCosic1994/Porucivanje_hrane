@@ -2,12 +2,12 @@
 \section{Slu\v cajevi upotrebe}
 \subsection{Upravljanje nalozima}
 
-Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opisuje slučaj upravljanja nalozima.
+Na Slici \ref{fig:slika_nalozi} predstavljen je dijagram slučajeva upotrebe koji opisuje slučaj upravljanja nalozima.
 
 \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/Upravljanje_nalozima.JPG}
     \caption{Dijagram slučajeva upotrebe}
-    \label{fig:slika3}
+    \label{fig:slika_nalozi}
 \end{figure}
 
 \subsubsection{Registracija korisnika na veb stranici restorana}
@@ -26,7 +26,7 @@ Na Slici \ref{fig:slika3} predstavljen je dijagram slučajeva upotrebe koji opis
         \item Korisnik odlazi na veb stranicu restorana i otvara formu za registraciju.
         \item Korisnik popunjava formu za registraciju.
         \item Sistem vrši validaciju registracije.
-        \item Sistem beleži novog korisnika u bazi
+        \item Sistem beleži novog korisnika u bazi.
         \item Sistem obaveštava korisnika o uspešnosti registracije.
     \end{enumerate}
 \end{itemize}
@@ -142,7 +142,7 @@ Prelazi se na slučaj upotrebe ”3.1.1 Registracija korisnika na sajtu restoran
         \item Menadžer odredjuje prava pristupa nalozima zaposlenih.
         \item Menadžer potvrđuje unete podatke klikom na dugme 'Sačuvaj'.
         \item Sistem beleži novog zaposlenog u bazi.
-        \item Sistem obaveštava zaposlenog o uspešnosti registracije slanjem e-mail poruke.
+        \item Sistem obaveštava zaposlenog o uspešnosti registracije slanjem obaveštenja.
 \end{enumerate}
 \end{itemize}
 \begin {itemize}
@@ -232,7 +232,7 @@ Na slici \ref{fig:slika14} je predstavljen dijagram stanja koji opisuje opšti t
     \caption{Dijagram stanja} % opis ce stajati ispod slike
     \label{fig:slika14}
 \end{figure}
-\subsubsection{Onlajn naručivanje}
+\subsubsection{Online naručivanje}
 
 \begin{itemize}
     \item \textbf{Kratak opis}: Korisnik naručuje željenu hranu putem veb stranice. Porudžbina biva prihvaćena ili odbijena od strane koordinatora.
@@ -309,7 +309,7 @@ Na slici \ref{fig:slika14} je predstavljen dijagram stanja koji opisuje opšti t
       \quad 5.1.2. Korisnik ne želi da poruči nešto drugo. Slučaj upotrebe se završava. \\
     
     \end{itemize}
-Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izmedju korisnika i koordinatora prilikom naručivanja hrane, bilo putem telefona ili onlajn.
+Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izmedju korisnika i koordinatora prilikom naručivanja hrane, bilo putem telefona ili online.
 
 \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/DijagramSekvenci.png}\\
@@ -338,12 +338,12 @@ Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izm
 \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/Realizacija_zahteva.png}
     \caption{Dijagram slu\v cajeva upotrebe} % opis ce stajati ispod slike
-    \label{fig:slika4}
+    \label{fig:slika_rel_zahteva}
 \end{figure}
  \begin{figure}[!h]
     \includegraphics[width=1\textwidth]{slike/Realizacija_zahteva_dijagram_aktivnosti.jpg}
     \caption{Dijagram aktivnosti} % opis ce stajati ispod slike
-    \label{fig:slika6}
+    \label{fig:dij_akt}
 \end{figure}
 \newpage
 \subsubsection{Prosleđivanje porudžbine od koordinatora ka kuvaru}
@@ -505,12 +505,12 @@ Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izm
     Zaposleni, menad\v zer
     \item \textbf{Preduslovi}: Zaposleni ima na raspolaganju dane za odmor.
     \item \textbf{Postuslovi}:
-    Zaposlen je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
+    Zaposleni je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
     \item \textbf{Glavni tok}:
     \begin{enumerate}
         \item Zaposleni se prijavljuje na sistem.
         \item Zaposleni vr\v si odabir odre\dj enih datuma za odmor.
-        \item Zahtev za odmor se evidentira u sistemu 
+        \item Zahtev za odmor se evidentira u sistemu. 
         \item Sistem obave\v stava menad\v zera da je stigao zahtev za odmor nekog od zaposlenih slanjem obaveštenja.
         % \item Menad\v zer je obave\v sten da je primio zahtev za odmor ili nepla\'ceni odmor (e-mail).
         \item Menad\v zer proverava da li je moguće organizovati funkcionisanje objekta za odre\dj ene datume bez dotičnog zaposlenog.
@@ -554,10 +554,10 @@ Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izm
     Zaposleni, menad\v zer
     \item \textbf{Preduslovi}: Nema
     \item \textbf{Postuslovi}:
-    Zaposlen je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
+    Zaposleni je obave\v sten da li je njegov zahtev prihva\'cen ili ne.
     \item \textbf{Glavni tok}:
     \begin{enumerate}
-        \item Zaposleni se prijavljuje na sistem
+        \item Zaposleni se prijavljuje na sistem.
         \item Zaposleni vr\v si odabir odre\dj enih datuma za nepla\'ceni odmor.
         \item Zahtev za nepla\'ceni odmor se evidentira u sistemu.
         \item Sistem obave\v stava menad\v zera da je stigao zahtev za nepla\'ceni odmor slanjem obaveštenja.
@@ -594,7 +594,7 @@ Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izm
 \newpage
  \subsection{Upravljanje namirnicama}
  Upravljanje namirnicama podrazumeva vođenje računa o zalihama hrane i pića u restoranu. Ovo je neophodno da bi bilo koji restoran mogao da funkcioniše. Odnosi se na poručivanje hrane, prijem robe i evidentiranje prispele robe u sistemu. U ovom procesu učestvuju magacioner i dobavljač.
- Na Slici \ref{fig:slika5} predstavljen je dijagram slučajeva upotrebe za upravljanje namirnicama.
+ Na Slici \ref{fig:slika_namir} predstavljen je dijagram slučajeva upotrebe za upravljanje namirnicama.
  
  \begin{itemize}
      \item Magacioner na osnovu stanja namirnica u magacinu sastavlja spisak za nabavku i obaveštava dobavljača o porudžbini. Kada roba pristigne, smešta je u magacin i evidentira prispeće robe u sistemu.
@@ -606,7 +606,7 @@ Na narednoj slici nalazi se dijagram sekvenci kojim se prikazuje interakcija izm
     \includegraphics[width=1\textwidth]{slike/Upravljanje_namirnicama.JPG}
     \end{center}
     \caption{Dijagram slu\v cajeva upotrebe} % opis ce stajati ispod slike
-    \label{fig:slika8}
+    \label{fig:slika_namir}
 \end{figure}
 % \includegraphics[width=136mm]{slike/Upravljanje_namirnicama.JPG}\\
 % \begin{center}

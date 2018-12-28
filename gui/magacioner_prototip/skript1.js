@@ -57,26 +57,18 @@
 	}
 	
 	function deliver() {
-		debugger;
-
 		var desIng = document.getElementById("delivered_ing").placeholder;
 		var desAmo = document.getElementById("delivered_amo").value;
-		console.log(desIng);
-		console.log(desAmo);
 		var food = JSON.parse(window.sessionStorage.getItem("food"))
 		var amount = JSON.parse(window.sessionStorage.getItem("amount"))
-
-
 		var i;
 		
-		for(i=0; i<food.length; i++)
-		{
+		for(i=0; i<food.length; i++){
 			 if(food[i] === desIng)
 				 amount[i] = amount[i] - desAmo;
 			 if(amount[i] < 0 )
 				 amount[i] = 0;
 		}
-
 		
 		window.sessionStorage.setItem("amount", JSON.stringify(amount))
 		
@@ -110,10 +102,8 @@
 		var tempSize = (ind === 0) ? size : size1;
 		var tempAmount = (ind === 0) ? amount : amount1;
 		var tempId = (ind === 0) ? "id" : "id1";
-		console.log("ind")
-		console.log(ind)
 		var text = '<div class="form-group"><table class="table table-bordered table-light mt-5"> <thead><tr class = "text-center"><th scope="col">Namirnica</th><th scope="col">Količina</th> <th scope="col">Broj pakovanja</th><th> </th></tr>'
-		for(i=0;i<tempFood.length;i++){
+		for(i=0; i<tempFood.length; i++){
 			console.log(tempFood[i])
 			console.log(tempSize[i])
 			console.log(tempAmount[i])
@@ -141,12 +131,7 @@
 		}
 		
 		text += '</thead>'
-		if (text === null)
-			console.log('TEXT NULL')
-		if (document.getElementById(tempId) === null)
-			console.log('ID NULL')
-		
-		console.log('\n')
+
 		document.getElementById(tempId).innerHTML = text;
 	 }
 	 
@@ -171,14 +156,10 @@
 			food1[i] = "None";
 		}
 		console.log("delivered")
-		for(i=0; i<food1.length; i++){
-			console.log(food1[1])
-		}
 		
 		window.sessionStorage.setItem("food", JSON.stringify(food))
 		window.sessionStorage.setItem("amount", JSON.stringify(amount))
 		window.sessionStorage.setItem("food1", JSON.stringify(food1))
-
 
 		write(1)	
 	}

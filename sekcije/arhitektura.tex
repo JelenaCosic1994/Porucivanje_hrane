@@ -20,8 +20,8 @@ Arhitektura sistema je osmišljena kao klijent-server tip arhitekture čiji su e
 \begin{enumerate}
     \item \textbf{Model} sadrži skup klasa koje opisuju sve entitete iz informacionog sistema. Model se sastoji od sledećih klasa sa opisanom funkcijom:
     \begin{itemize}
-        \item \emph{Korisnik} je klasa koja sadrži sve lične informacije o korisniku aplikacije. Njegova polja su identična kolonama u tabeli Osoba (slika 11), takođe sadrži i alternativne adrese koje jedan korisnik može imati.
-        \item \emph{Zaposleni} je klasa koja sadrži sve lične informacije o zaposlenom u restoranu. Polja klase Zaposleni identična su kolonama u tabeli Osoba (slika 11), takođe sadrži i informacije o njegovoj ulozi o sistemu, broj broj preostalih/iskorišćenih slobodnih dana, kao i podatak da li je taj zaposleni trenutno na odmoru.
+        \item \emph{Korisnik} je klasa koja sadrži sve lične informacije o korisniku aplikacije. Njegova polja su identična kolonama u tabeli Osoba (slika \ref{fig:slika_baza}), takođe sadrži i alternativne adrese koje jedan korisnik može imati.
+        \item \emph{Zaposleni} je klasa koja sadrži sve lične informacije o zaposlenom u restoranu. Polja klase Zaposleni identična su kolonama u tabeli Osoba (slika \ref{fig:slika_baza}), takođe sadrži i informacije o njegovoj ulozi o sistemu, broj broj preostalih/iskorišćenih slobodnih dana, kao i podatak da li je taj zaposleni trenutno na odmoru.
         \item \emph{ZahtevZaOdsustvom} je klasa koja sadrži sva polja istoimenog entiteta. U ovoj klasi, nalaze se sve potrebne informacije za obradu zahteva zaposlenog za odlazak na plaćeno/neplaćeno odsustvo kao što su datum\_početka i datum\_završetka, kao i informacija o tome da li je određeni zahtev prihvaćen ili odbijen.
         \item \emph{Namirnica} je klasa oja sadrži podatke o svakoj namirnici koja se trenutno nalazi u magacinu. Ona direktno oslikava entitet Namirnice koji se nalazi u bazi.
          \item \emph{Jelo} je klasa koja oslikava prikaz jednog jela u jelovniku koji se prikazuje korisniku.
@@ -40,7 +40,7 @@ Arhitektura sistema je osmišljena kao klijent-server tip arhitekture čiji su e
     
     \item \emph{Upravljanje porudžbinama} je deo UI-ja koji se prikazuje isključivo koordinatoru. Na ovoj kartici koordinator je u mogućnosti da vidi porudžbine tj. sve detalje vezane za određene porudžbine i da ih prihvati ili odbije, tačnije, ovde se vrši obrada i pregled porudžbina.
     
-    \item Kartica pod nazivom \emph{Raspoloživost namirnica} prikazuje se koordinatoru. Njemu je ovde omogućen pregled količine svih namirnica u magacinu u svrhu prihvatanja/odbijanja onlajn porudžbine. Deo interfejsa koji je specifičan isključivo za magacionera, a odnosi se na namirnice su kartice \emph{Stanje magacina} , na kojoj on može da vidi stanje preostalih namirnica u magacinu i da poruči namirnice koje nedostaju, i \emph{Naručene namirnice}, gde magacioner može da vidi šta je od namirnica naručio i kasnije, kada pristignu, da to evidentira.
+    \item Kartica pod nazivom \emph{Raspoloživost namirnica} prikazuje se koordinatoru. Njemu je ovde omogućen pregled količine svih namirnica u magacinu u svrhu prihvatanja/odbijanja porudžbine. Deo interfejsa koji je specifičan isključivo za magacionera, a odnosi se na namirnice su kartice \emph{Stanje magacina} , na kojoj on može da vidi stanje preostalih namirnica u magacinu i da poruči namirnice koje nedostaju, i \emph{Naručene namirnice}, gde magacioner može da vidi šta je od namirnica naručio i kasnije, kada pristignu, da to evidentira.
     
     
     \item Deo interfejsa koji se tiče obrade i pregleda odmora zaposlenom koji želi da zatraži odsustvo prikazuje se u kartici \emph{Odmor}. Tu zaposleni može da kreira novi zahtev za odmorom, kao i da proveri u kakvom su stanju njegovi prethodno zatraženi zahtevi.
